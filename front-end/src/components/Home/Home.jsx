@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "./Home.css";
+// import "./Home.css";
 
 const Home = (props) => {
   return (
     <React.Fragment>
       <div id="Home" className="tablet:grid-col padding-x-2">
         <p>Before using this symptom checker, please read carefully and accept our Terms and Services:</p>
-        <ul>
+        <ul className="list-disc space-y-4 my-4">
           <li>This checkup is not a diagnosis.</li>
           <li>This checkup is for informational purposes and is not a qualified medical opinion.</li>
           <li>Information that you provide is anonymous and not shared with anyone. We also do not store any information on our server.</li>

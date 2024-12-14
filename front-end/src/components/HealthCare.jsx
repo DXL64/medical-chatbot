@@ -154,7 +154,7 @@ class HealthCare extends Component {
       });
     }
   };
-  handleResetClick = () => {};
+  handleResetClick = () => { };
   get_previous_page = (e) => {
     switch (this.state.current_page) {
       case "Disease":
@@ -256,86 +256,81 @@ class HealthCare extends Component {
     } = this.state;
     return (
       <React.Fragment>
-        <Navibar />
-        <main id="main-content">
-          <div className="grid-container padding-bottom-4">
-            <div className="grid-row padding-4">
-              <div className="desktop:grid-col-2">
-                <ul className="side-menu-list padding-left-2">
-                  <li id="progressbar">
-                    <div
-                      className={`${
-                        tab_progress === 25 && "progressbardiv25"
-                      } ${tab_progress === 50 && "progressbardiv50"} ${
-                        tab_progress === 75 && "progressbardiv75"
-                      } ${tab_progress === 100 && "progressbardiv100"}`}></div>
-                  </li>
-                  <li
-                    className={`${
-                      current_page === "Home" ? "active" : "done"
-                    }`}>
-                    Welcome
-                  </li>
-                  <li
-                    className={`${tab_progress === 50 && "active"} ${
-                      tab_progress < 50 && "list"
-                    } ${tab_progress > 50 && "done"}`}>
-                    Patient
-                  </li>
-                  <li
-                    className={`${tab_progress === 75 && "active"} ${
-                      tab_progress < 75 && "list"
-                    } ${tab_progress > 75 && "done"}`}>
-                    Symptom
-                  </li>
-                  <li
-                    className={`${tab_progress === 100 && "active"} ${
-                      tab_progress < 100 && "list"
-                    } ${tab_progress > 100 && "done"}`}>
-                    Disease
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="desktop:grid-col-10"
-                id="ContentDiv padding-bottom-3">
-                <div className="grid-row padding-bottom-4 shoPageSection">
-                  {this.showPage()}
+        <div className="mx-96 justify-self-center">
+          <Navibar />
+          <main id="main-content">
+            <div className="grid-container pb-8">
+              <div className="grid grid-row grid-cols-12 p-8">
+                <div className="col-span-2">
+                  <ul className="side-menu-list padding-left-2">
+                    <li id="progressbar">
+                      <div
+                        className={`${tab_progress === 25 && "progressbardiv25"
+                          } ${tab_progress === 50 && "progressbardiv50"} ${tab_progress === 75 && "progressbardiv75"
+                          } ${tab_progress === 100 && "progressbardiv100"}`}></div>
+                    </li>
+                    <li
+                      className={`${current_page === "Home" ? "active" : "done"
+                        }`}>
+                      Welcome
+                    </li>
+                    <li
+                      className={`${tab_progress === 50 && "active"} ${tab_progress < 50 && "list"
+                        } ${tab_progress > 50 && "done"}`}>
+                      Patient
+                    </li>
+                    <li
+                      className={`${tab_progress === 75 && "active"} ${tab_progress < 75 && "list"
+                        } ${tab_progress > 75 && "done"}`}>
+                      Symptom
+                    </li>
+                    <li
+                      className={`${tab_progress === 100 && "active"} ${tab_progress < 100 && "list"
+                        } ${tab_progress > 100 && "done"}`}>
+                      Disease
+                    </li>
+                  </ul>
                 </div>
-              </div>
-              <div className="desktop:grid-col-12">
                 <div
-                  id="buttonsSection"
-                  className="grid-row display-flex padding-left-2 padding-right-2 padding-top-2">
-                  <button
-                    disabled={this.state.current_page === "Home"}
-                    onClick={this.get_previous_page}
-                    className="usa-button usa-button--outline back">
-                    Back
-                  </button>
-                  {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
-                  <button
-                    className={`usa-button ${
-                      button_is_disabled ||
-                      patient_2_next_button_disabled ||
-                      user_symptom_length === 0
+                  className="col-span-10 grid grid-cols-2"
+                  id="ContentDiv padding-bottom-3">
+                  <div className="grid-row padding-bottom-4 shoPageSection">
+                    {this.showPage()}
+                  </div>
+                </div>
+                <div className="col-span-12">
+                  <div
+                    id="buttonsSection"
+                    className="grid-row display-flex padding-left-2 padding-right-2 padding-top-2">
+                    <button
+                      disabled={this.state.current_page === "Home"}
+                      onClick={this.get_previous_page}
+                      className="usa-button usa-button--outline back">
+                      Back
+                    </button>
+                    {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
+                    <button
+                      className={`usa-button ${button_is_disabled ||
+                        patient_2_next_button_disabled ||
+                        user_symptom_length === 0
                         ? ""
                         : "next"
-                    }`}
-                    disabled={
-                      button_is_disabled ||
-                      patient_2_next_button_disabled ||
-                      user_symptom_length === 0
-                    }
-                    type="submit"
-                    onClick={this.get_next_page}>
-                    {this.state.button_name}
-                  </button>
+                        }`}
+                      disabled={
+                        button_is_disabled ||
+                        patient_2_next_button_disabled ||
+                        user_symptom_length === 0
+                      }
+                      type="submit"
+                      onClick={this.get_next_page}>
+                      {this.state.button_name}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
       </React.Fragment>
     );
   }

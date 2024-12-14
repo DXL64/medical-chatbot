@@ -17,7 +17,7 @@ const Navibar = () => {
           <div class="usa-navbar">
             <div class="usa-logo margin-0" id="basic-mega-logo">
               <em class="usa-logo__text">
-                <div className="display-flex flex-row align-items-center">
+                <div className="flex align-middle items-center font-bold gap-4 my-10">
                   <DHIlab />
                   <h3 className="display-inline-block padding-left-1">Kiểm tra triệu chứng bệnh</h3>
                 </div>

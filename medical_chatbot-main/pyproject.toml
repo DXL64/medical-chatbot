@@ -1,0 +1,20 @@
+[project]
+name = "medical-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain-openai>=0.2.10",
+    "langchain>=0.3.8",
+    "langgraph>=0.2.53",
+    "openai>=1.55.1",
+    "python-dotenv>=1.0.1",
+    "pandas>=2.2.3",
+    "grandalf>=0.8",
+    "streamlit>=1.40.2",
+    "ipykernel>=6.29.5",
+    "pygraphviz>=1.14",
+    "fastapi>=0.115.6",
+    "uvicorn>=0.32.1",
+]

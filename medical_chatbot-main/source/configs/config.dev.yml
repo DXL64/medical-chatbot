@@ -1,0 +1,9 @@
+app_name: rag4app
+app_version: 1.0.0
+
+openai:
+  api_key: os.environ/OPENAI_API_KEY
+  base_url: os.environ/BASE_URL
+  model_name: gpt-4o-mini@openai
+data:
+  path: data/data_disease.csv

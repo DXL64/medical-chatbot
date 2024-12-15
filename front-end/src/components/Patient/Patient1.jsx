@@ -1,32 +1,60 @@
-import React, { Component } from "react";
-import "./Patient.css";
+import React from "react";
 
 const Patient = ({ age, ageChange, male, female, gender }) => {
   // props > age, gender, male, female
 
   return (
     <React.Fragment>
-      <div id="Home" className="tablet:grid-col padding-x-2">
-        <form class="usa-form">
-          <label class="usa-label" for="range-slider">
+      <div id="Home" className="tablet:grid-cols-1 px-4 py-2">
+        <form className="space-y-4">
+          <label
+            className="block text-gray-800 text-lg font-semibold"
+            htmlFor="range-slider">
             What is your age?
-            <h2>{age}</h2>
+            <h2 className="text-blue-600 transition duration-200 ease-in-out">
+              {age}
+            </h2>
           </label>
-          <input id="range-slider" class="usa-range outline-0" type="range" min="0" max="100" value={age} onChange={ageChange} />
+          <input
+            id="range-slider"
+            className="w-full h-2 bg-gray-300 rounded-lg cursor-pointer focus:outline-none"
+            type="range"
+            min="0"
+            max="100"
+            value={age}
+            onChange={ageChange}
+          />
         </form>
       </div>
-      <div id="Home" className="tablet:grid-col padding-x-2">
-        <p>What is your sex?</p>
-        <form class="usa-form">
-          <div class="usa-radio">
-            <input class="usa-radio__input outline-0" id="stanton" type="radio" checked={male} onChange={gender} name="historical-figures-2" value="male" />
-            <label class="usa-radio__label" for="stanton">
+
+      <div id="Home" className="tablet:grid-cols-1 px-4 py-2">
+        <p className="text-gray-800">What is your sex?</p>
+        <form className="space-y-4">
+          <div className="flex items-center">
+            <input
+              className="usa-radio__input outline-0"
+              id="male"
+              type="radio"
+              checked={male}
+              onChange={gender}
+              name="gender"
+              value="male"
+            />
+            <label className="ml-2 text-gray-700" htmlFor="male">
               Male
             </label>
           </div>
-          <div class="usa-radio">
-            <input class="usa-radio__input outline-0" id="anthony" type="radio" checked={female} onChange={gender} name="historical-figures-2" value="female" />
-            <label class="usa-radio__label" for="anthony">
+          <div className="flex items-center">
+            <input
+              className="usa-radio__input outline-0"
+              id="female"
+              type="radio"
+              checked={female}
+              onChange={gender}
+              name="gender"
+              value="female"
+            />
+            <label className="ml-2 text-gray-700" htmlFor="female">
               Female
             </label>
           </div>

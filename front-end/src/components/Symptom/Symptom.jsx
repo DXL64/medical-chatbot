@@ -2,13 +2,6 @@ import React, { Component } from "react";
 //data
 import { Symptoms } from "../../data/Symptoms";
 import { Diseases } from "../../data/Diseases";
-//component
-
-//CSS
-import "./Symptom.css";
-//icon
-
-// import SettingsBackupRestoreIcon from "@material-ui/icons/SettingsBackupRestore";
 
 class Symptom extends Component {
   state = {
@@ -23,7 +16,6 @@ class Symptom extends Component {
   disease_symptoms = Diseases;
 
   //Adds Symptoms to the UserSymptom state array
-
   addSymptomButtonEvent = (e) => {
     if (!this.state.user_symptoms.includes(e.target.value)) {
       let user_symptoms = [...this.state.user_symptoms, e.target.value];
@@ -32,7 +24,8 @@ class Symptom extends Component {
       });
     }
   };
-  //Deletes Symptoms to the UserSymptom state array
+
+  //Deletes Symptoms from the UserSymptom state array
   deleteSymptomButtonEvent = (e) => {
     if (this.state.user_symptoms.includes(e.target.value)) {
       let user_symptoms = [...this.state.user_symptoms];
@@ -71,7 +64,10 @@ class Symptom extends Component {
       return (all_objects = [...all_objects, object]);
     });
     return this.setState({ disease_with_possibility: all_objects }, () => {
-      this.props.getPossibleDisease(this.state.disease_with_possibility, this.state.user_symptoms);
+      this.props.getPossibleDisease(
+        this.state.disease_with_possibility,
+        this.state.user_symptoms
+      );
     });
   };
 
@@ -83,7 +79,6 @@ class Symptom extends Component {
   };
 
   //Set the symptom component
-
   on_click_reset_button = () => {
     return this.setState(
       {
@@ -97,7 +92,10 @@ class Symptom extends Component {
   };
 
   keyDownEvent = (e) => {
-    const re = new RegExp(e.target.value.split("").join("\\w*").replace(/\W/, ""), "i");
+    const re = new RegExp(
+      e.target.value.split("").join("\\w*").replace(/\W/, ""),
+      "i"
+    );
 
     const symps = Symptoms.filter((each) => {
       return each.match(re);
@@ -105,7 +103,10 @@ class Symptom extends Component {
     if (e.key === "Enter") {
       // eslint-disable-next-line array-callback-return
       return symps.map((key) => {
-        if (!this.state.user_symptoms.includes(key) && e.target.value.toLowerCase() === key.toLowerCase()) {
+        if (
+          !this.state.user_symptoms.includes(key) &&
+          e.target.value.toLowerCase() === key.toLowerCase()
+        ) {
           return this.setState(
             {
               user_symptoms: [...this.state.user_symptoms, key],
@@ -134,17 +135,15 @@ class Symptom extends Component {
   };
 
   showContent = () => {
-    // eslint-disable-next-line default-case
     const symps = Symptoms.filter((each) => {
       return each.toLowerCase().includes(this.state.searched.toLowerCase());
     });
-    // console.log(symps, "symps");
+
     return (
-      <div id="#Symptoms" className="grid-row width-full">
-        <div className="col-12 tablet:grid-col-5">
-          {/* <div className="grid-row"> */}
+      <div id="#Symptoms" className="w-full grid grid-cols-1 gap-4">
+        <div className="col-span-5">
           <input
-            class="usa-input searchSymptomsInput"
+            className="border-b-2 border-blue-800 focus:outline-none focus:border-blue-600 w-full py-2 px-4"
             onKeyDown={this.keyDownEvent}
             onChange={this.getInputSymptoms}
             placeholder="Search Symptoms"
@@ -152,38 +151,42 @@ class Symptom extends Component {
             name="input-type-text"
             type="text"
           />
-          {/* </div> */}
-          {/* <div > */}
-          <ul className="symtomsListBox padding-top-2">
+          <ul className="mt-4 h-80 overflow-y-scroll text-gray-700">
             {symps
               .filter((item) => !this.state.user_symptoms.includes(item))
-              .map((key, id) => {
-                return (
-                  <li key={id}>
-                    {/* {console.log(key, "key")} */}
-                    <button onClick={this.addSymptomButtonEvent.bind(this)} value={key}>
-                      {key}
-                    </button>
-                  </li>
-                );
-              })}
+              .map((key, id) => (
+                <li key={id} className="mb-2">
+                  <button
+                    onClick={this.addSymptomButtonEvent.bind(this)}
+                    value={key}
+                    className="w-full py-2 px-4 rounded-lg hover:bg-yellow-400 transition ease-in-out duration-200 text-left">
+                    {key}
+                  </button>
+                </li>
+              ))}
           </ul>
-          {/* </div> */}
         </div>
-        <div className="col-12 tablet:grid-col-7 padding-top-2 UserSymptoms">
-          <ul>
+        <div className="col-span-7 mt-4">
+          <ul className="list-none">
             {this.state.user_symptoms.map((key, id) => (
-              <li key={id}>
+              <li
+                key={id}
+                className="inline-block mr-2 mb-2 bg-blue-600 text-white py-2 px-4 rounded-full text-lg">
                 {key}{" "}
-                <button onClick={this.deleteSymptomButtonEvent.bind(this)} key={id} value={key}>
+                <button
+                  onClick={this.deleteSymptomButtonEvent.bind(this)}
+                  value={key}
+                  className="bg-white text-blue-800 rounded-full text-sm font-semibold px-2 py-1 ml-2">
                   X
                 </button>
               </li>
             ))}
           </ul>
         </div>
-        <div className="col-12 width-full display-flex flex-row flex-justify-start resetButton padding-left-2">
-          <button onClick={this.on_click_reset_button} className="usa-button usa-button--secondary">
+        <div className="col-span-1 mt-4 flex justify-start pl-2">
+          <button
+            onClick={this.on_click_reset_button}
+            className="usa-button bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded">
             Reset
           </button>
         </div>

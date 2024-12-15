@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Disease.css";
 
 class Disease extends Component {
   // State
@@ -14,49 +13,57 @@ class Disease extends Component {
     });
     filtered_list.sort((a, b) => -a.possibility.localeCompare(b.possibility, undefined, { numeric: true }) || a.name.localeCompare(b.name));
     return filtered_list.length !== 0 ? (
-      <div className="grid-row width-full DiseaseComponent">
-        <div className="col-12 tablet:grid-col-12 patientInfo">
-          <h3>Patient gender: {this.props.gender}</h3>
-          <h3>Patient age: {this.props.age}</h3>
+      <div className="w-full p-4 text-black">
+        <div className="w-full tablet:grid tablet:grid-cols-12 patientInfo">
+          <h3 className="text-blue-800">Patient gender: {this.props.gender}</h3>
+          <h3 className="text-blue-800">Patient age: {this.props.age}</h3>
         </div>
-        <div className="col-12 tablet:grid-col-12 patientQuestions">
+        <div className="w-full tablet:grid tablet:grid-cols-12 patientQuestions">
           {this.state.patientInfo.map((key, id) => (
             <div className="singleQuestion" key={id}>
               <p>{key.question}</p>
-              <p>{key.answer}</p>
+              <p className="text-blue-800">{key.answer}</p>
             </div>
           ))}
         </div>
-        <div className="col-12 tablet:grid-col-12 DiagnosisReport">
-          <h2>Diagnosis Report</h2>
+        <div className="w-full tablet:grid tablet:grid-cols-12 DiagnosisReport">
+          <h2 className="font-bold text-2xl">Diagnosis Report</h2>
           {filtered_list.map((key, id) => (
-            <div className="reportDiv" key={id}>
-              <div className="display-flex flex-row flex-justify flex-wrap">
-                <div className="display-flex flex-align-center titleReport">
-                  <h4>{key.name}</h4>
-                  <a href={`https://en.wikipedia.org/wiki/${key.name}`} title={"wikipedia"} rel="noopener noreferrer" target="blank">
+            <div className="reportDiv mb-6" key={id}>
+              <div className="flex flex-wrap justify-between items-center">
+                <div className="flex items-center titleReport">
+                  <h4 className="text-lg">{key.name}</h4>
+                  <a
+                    href={`https://en.wikipedia.org/wiki/${key.name}`}
+                    title={"wikipedia"}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="ml-4 bg-blue-800 text-white py-1 px-3 rounded-full text-sm"
+                  >
                     i
                   </a>
                 </div>
-                <div className="display-flex flex-align-center Possibility">
-                  <p>
-                    Possibility <span>{key.possibility}%</span>
+                <div className="flex items-center Possibility">
+                  <p className="text-sm">
+                    Possibility <span className="font-semibold text-blue-800">{key.possibility}%</span>
                   </p>
-                  <div className="possibilityProgressBar">
-                    <div style={{ width: `${key.possibility}%` }}></div>
+                  <div className="bg-gray-300 w-24 h-1 rounded-full ml-2">
+                    <div style={{ width: `${key.possibility}%` }} className="h-full bg-blue-800 rounded-full"></div>
                   </div>
                 </div>
               </div>
-              <div className="diseaseSymptoms">
-                <h4>Disease Symptoms</h4>
-                <ul>
+              <div className="diseaseSymptoms mt-4">
+                <h4 className="font-medium text-lg">Disease Symptoms</h4>
+                <ul className="list-none">
                   {key.disease_symptom.sort().map((item, index) => {
                     return key.symptom_user_has.includes(item) ? (
-                      <li key={index} className="active">
+                      <li key={index} className="inline-block p-2 m-2 border border-blue-800 text-blue-800 rounded-lg">
                         {item}
                       </li>
                     ) : (
-                      <li key={index}>{item}</li>
+                      <li key={index} className="inline-block p-2 m-2 rounded-lg">
+                        {item}
+                      </li>
                     );
                   })}
                 </ul>
@@ -64,18 +71,20 @@ class Disease extends Component {
             </div>
           ))}
         </div>
-        <div>Always visit a doctor if you have any symptoms of a disease or call your local hospital</div>
+        <div className="mt-4 text-center text-sm">
+          Always visit a doctor if you have any symptoms of a disease or call your local hospital.
+        </div>
       </div>
     ) : (
-      <React.Fragment>
-        <div className="grid-row width-full DiseaseComponent">
-          <div className="col-12 tablet:grid-col-12 patientInfo">
-            <h3>Patient gender: Male</h3>
-            <h3>Patient age: 71</h3>
-          </div>
-          <p> Cannot determine possible diseases due to lack of symptoms. Please retry the analysis with actual symptoms or call your local hospital if it is an emergency.</p>
+      <div className="w-full p-4 text-black">
+        <div className="w-full tablet:grid tablet:grid-cols-12 patientInfo">
+          <h3 className="text-blue-800">Patient gender: Male</h3>
+          <h3 className="text-blue-800">Patient age: 71</h3>
         </div>
-      </React.Fragment>
+        <p className="mt-4 text-center text-sm">
+          Cannot determine possible diseases due to lack of symptoms. Please retry the analysis with actual symptoms or call your local hospital if it is an emergency.
+        </p>
+      </div>
     );
   };
 

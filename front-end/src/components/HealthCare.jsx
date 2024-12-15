@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Navibar from "./Navibar";
-import "./HealthCare.css";
 import Home from "./Home/Home";
 import Patient from "./Patient/Patient1";
 import Patient2 from "./Patient/Patient2";
 import Symptom from "./Symptom/Symptom";
 import Disease from "./Disease/Disease";
+import "./HealthCare.css";
 class HealthCare extends Component {
   constructor(props) {
     super(props);
@@ -154,7 +154,7 @@ class HealthCare extends Component {
       });
     }
   };
-  handleResetClick = () => { };
+  handleResetClick = () => {};
   get_previous_page = (e) => {
     switch (this.state.current_page) {
       case "Disease":
@@ -265,28 +265,36 @@ class HealthCare extends Component {
                   <ul className="side-menu-list padding-left-2">
                     <li id="progressbar">
                       <div
-                        className={`${tab_progress === 25 && "progressbardiv25"
-                          } ${tab_progress === 50 && "progressbardiv50"} ${tab_progress === 75 && "progressbardiv75"
-                          } ${tab_progress === 100 && "progressbardiv100"}`}></div>
+                        className={`${
+                          tab_progress === 25 && "progressbardiv25"
+                        } ${tab_progress === 50 && "progressbardiv50"} ${
+                          tab_progress === 75 && "progressbardiv75"
+                        } ${
+                          tab_progress === 100 && "progressbardiv100"
+                        }`}></div>
                     </li>
                     <li
-                      className={`${current_page === "Home" ? "active" : "done"
-                        }`}>
+                      className={`${
+                        current_page === "Home" ? "active" : "done"
+                      }`}>
                       Welcome
                     </li>
                     <li
-                      className={`${tab_progress === 50 && "active"} ${tab_progress < 50 && "list"
-                        } ${tab_progress > 50 && "done"}`}>
+                      className={`${tab_progress === 50 && "active"} ${
+                        tab_progress < 50 && "list"
+                      } ${tab_progress > 50 && "done"}`}>
                       Patient
                     </li>
                     <li
-                      className={`${tab_progress === 75 && "active"} ${tab_progress < 75 && "list"
-                        } ${tab_progress > 75 && "done"}`}>
+                      className={`${tab_progress === 75 && "active"} ${
+                        tab_progress < 75 && "list"
+                      } ${tab_progress > 75 && "done"}`}>
                       Symptom
                     </li>
                     <li
-                      className={`${tab_progress === 100 && "active"} ${tab_progress < 100 && "list"
-                        } ${tab_progress > 100 && "done"}`}>
+                      className={`${tab_progress === 100 && "active"} ${
+                        tab_progress < 100 && "list"
+                      } ${tab_progress > 100 && "done"}`}>
                       Disease
                     </li>
                   </ul>
@@ -310,12 +318,13 @@ class HealthCare extends Component {
                     </button>
                     {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
                     <button
-                      className={`usa-button ${button_is_disabled ||
+                      className={`usa-button ${
+                        button_is_disabled ||
                         patient_2_next_button_disabled ||
                         user_symptom_length === 0
-                        ? ""
-                        : "next"
-                        }`}
+                          ? ""
+                          : "next"
+                      }`}
                       disabled={
                         button_is_disabled ||
                         patient_2_next_button_disabled ||

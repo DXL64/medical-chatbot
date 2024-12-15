@@ -140,8 +140,8 @@ class Symptom extends Component {
     });
 
     return (
-      <div id="#Symptoms" className="w-full grid grid-cols-1 gap-4">
-        <div className="col-span-5">
+      <div id="#Symptoms" className="w-full grid grid-cols-12 gap-4">
+        <div className="col-span-6">
           <input
             className="border-b-2 border-blue-800 focus:outline-none focus:border-blue-600 w-full py-2 px-4"
             onKeyDown={this.keyDownEvent}
@@ -166,7 +166,7 @@ class Symptom extends Component {
               ))}
           </ul>
         </div>
-        <div className="col-span-7 mt-4">
+        <div className="col-span-6 mt-4">
           <ul className="list-none">
             {this.state.user_symptoms.map((key, id) => (
               <li

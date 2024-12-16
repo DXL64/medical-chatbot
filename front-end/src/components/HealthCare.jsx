@@ -16,7 +16,7 @@ class HealthCare extends Component {
       button_is_disabled: true, // Next button disabled if not agreed to terms
       home_button_checked: false, //Check if terms are agreed
       age: "18", //Patient Default Age
-      button_name: "Next", //Button name retry or next
+      button_name: "Tiếp theo", //Button name retry or next
       gender: "Male", //Default gender
       male: true, // patient checkbox
       female: false, // patient checkbox
@@ -53,14 +53,14 @@ class HealthCare extends Component {
         return this.setState({
           current_page: "Patient-2",
 
-          button_name: "Next",
+          button_name: "Tiếp theo",
           patient_2_next_button_disabled: true,
         });
       case "Patient-2":
         return this.setState({
           current_page: "Symptom",
           tab_progress: 75,
-          button_name: "Finish",
+          button_name: "Hoàn thành",
 
           patient_nav_value: true,
           user_symptom_length: 0,
@@ -68,7 +68,7 @@ class HealthCare extends Component {
       case "Symptom":
         return this.setState({
           current_page: "Disease",
-          button_name: "Retry",
+          button_name: "Thử lại",
           tab_progress: 100,
           symptom_nav_value: true,
           disease_nav_value: true,
@@ -80,7 +80,7 @@ class HealthCare extends Component {
           button_is_disabled: true, // Next button disabled if not agreed to terms
           home_button_checked: false, //Check if terms are agreed
           age: "18", //Patient Default Age
-          button_name: "Next", //Button name retry or next
+          button_name: "Tiếp theo", //Button name retry or next
           gender: "Male", //Default gender
           male: true, // patient checkbox
           female: false, // patient checkbox
@@ -160,7 +160,7 @@ class HealthCare extends Component {
       case "Disease":
         return this.setState({
           current_page: "Symptom",
-          button_name: "Finish",
+          button_name: "Hoàn thành",
           tab_progress: 75,
           disease_nav_value: false,
           user_symptom_length: this.state.user_symptoms.length,
@@ -170,7 +170,7 @@ class HealthCare extends Component {
           current_page: "Patient-2",
           symptom_page_button: "",
           tab_progress: 50,
-          button_name: "Next",
+          button_name: "Tiếp theo",
           patient_nav_value: false,
           patient_2_next_button_disabled: true,
           disease_possibility: [],
@@ -273,22 +273,22 @@ class HealthCare extends Component {
                     <li
                       className={`${current_page === "Home" ? "active" : "done"
                         }`}>
-                      Welcome
+                      Chào mừng
                     </li>
                     <li
                       className={`${tab_progress === 50 && "active"} ${tab_progress < 50 && "list"
                         } ${tab_progress > 50 && "done"}`}>
-                      Patient
+                      Thông tin bệnh nhân
                     </li>
                     <li
                       className={`${tab_progress === 75 && "active"} ${tab_progress < 75 && "list"
                         } ${tab_progress > 75 && "done"}`}>
-                      Symptom
+                      Triệu chứng
                     </li>
                     <li
                       className={`${tab_progress === 100 && "active"} ${tab_progress < 100 && "list"
                         } ${tab_progress > 100 && "done"}`}>
-                      Disease
+                      Dự đoán bệnh
                     </li>
                   </ul>
                 </div>
@@ -307,7 +307,7 @@ class HealthCare extends Component {
                       disabled={this.state.current_page === "Home"}
                       onClick={this.get_previous_page}
                       className="btn btn-primary btn-outline usa-button usa-button--outline back">
-                      Back
+                      Trở lại
                     </button>
                     {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
                     <button

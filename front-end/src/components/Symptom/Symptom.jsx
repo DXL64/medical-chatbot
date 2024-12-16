@@ -187,7 +187,7 @@ class Symptom extends Component {
           <button
             onClick={this.on_click_reset_button}
             className="usa-button bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded">
-            Reset
+            Thử lại
           </button>
         </div>
       </div>

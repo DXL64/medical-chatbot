@@ -5,18 +5,16 @@ const Home = (props) => {
     <React.Fragment>
       <div id="Home" className="grid tablet:grid-cols-1 px-2 py-4">
         <p className="text-gray-600 leading-relaxed">
-          Before using this symptom checker, please read carefully and accept
-          our Terms and Services:
+          Trước khi sử dụng mô hình kiểm tra triệu chứng bệnh, vui lòng đọc kỹ và chấp nhận Điều khoản và Dịch vụ của chúng tôi:
         </p>
         <ul className="list-disc pl-5 space-y-4 my-4 text-gray-600">
-          <li>This checkup is not a diagnosis.</li>
+          <li>Việc kiểm tra này không phải là một chẩn đoán chính xác.</li>
           <li>
-            This checkup is for informational purposes and is not a qualified
-            medical opinion.
+            Việc kiểm tra này nhằm mục đích cung cấp thông tin và không đủ điều kiện ​​y tế.
           </li>
           <li>
-            Information that you provide is anonymous and not shared with
-            anyone. We also do not store any information on our server.
+            Thông tin bạn cung cấp là ẩn danh và không được chia sẻ với
+            bất cứ ai. Chúng tôi cũng không lưu trữ bất kỳ thông tin nào trên máy chủ của chúng tôi.
           </li>
         </ul>
         <form className="text-base">
@@ -31,7 +29,7 @@ const Home = (props) => {
               value="truth"
             />
             <label className="ml-2 text-gray-800" htmlFor="truth">
-              I agree to the DHILab terms and conditions
+              Tôi đồng ý với các điều khoản và điều kiện trên
             </label>
           </div>
         </form>

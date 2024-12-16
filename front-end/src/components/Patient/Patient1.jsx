@@ -10,7 +10,7 @@ const Patient = ({ age, ageChange, male, female, gender }) => {
           <label
             className="block text-gray-800 text-lg font-semibold"
             htmlFor="range-slider">
-            What is your age?
+            Độ tuổi của bạn là?
             <h2 className="text-blue-600 transition duration-200 ease-in-out">
               {age}
             </h2>
@@ -28,7 +28,7 @@ const Patient = ({ age, ageChange, male, female, gender }) => {
       </div>
 
       <div id="Home" className="tablet:grid-cols-1 px-4 py-2">
-        <p className="text-gray-800">What is your sex?</p>
+        <p className="text-gray-800">Giới tính của bạn?</p>
         <form className="space-y-4">
           <div className="flex items-center">
             <input
@@ -41,7 +41,7 @@ const Patient = ({ age, ageChange, male, female, gender }) => {
               value="male"
             />
             <label className="ml-2 text-gray-700" htmlFor="male">
-              Male
+              Nam
             </label>
           </div>
           <div className="flex items-center">
@@ -55,7 +55,7 @@ const Patient = ({ age, ageChange, male, female, gender }) => {
               value="female"
             />
             <label className="ml-2 text-gray-700" htmlFor="female">
-              Female
+              Nữ
             </label>
           </div>
         </form>

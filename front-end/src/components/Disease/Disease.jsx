@@ -15,8 +15,8 @@ class Disease extends Component {
     return filtered_list.length !== 0 ? (
       <div className="w-full p-4 text-black">
         <div className="w-full tablet:grid tablet:grid-cols-12 patientInfo">
-          <h3 className="text-blue-800">Patient gender: {this.props.gender}</h3>
-          <h3 className="text-blue-800">Patient age: {this.props.age}</h3>
+          <h3 className="text-blue-800">Giới tính: {this.props.gender}</h3>
+          <h3 className="text-blue-800">Độ tuổi: {this.props.age}</h3>
         </div>
         <div className="w-full tablet:grid tablet:grid-cols-12 patientQuestions">
           {this.state.patientInfo.map((key, id) => (
@@ -27,7 +27,7 @@ class Disease extends Component {
           ))}
         </div>
         <div className="w-full tablet:grid tablet:grid-cols-12 DiagnosisReport">
-          <h2 className="font-bold text-2xl">Diagnosis Report</h2>
+          <h2 className="font-bold text-2xl">Kết quả chẩn đoán</h2>
           {filtered_list.map((key, id) => (
             <div className="reportDiv mb-6" key={id}>
               <div className="flex flex-wrap justify-between items-center">
@@ -45,7 +45,7 @@ class Disease extends Component {
                 </div>
                 <div className="flex items-center Possibility">
                   <p className="text-sm">
-                    Possibility <span className="font-semibold text-blue-800">{key.possibility}%</span>
+                    Xác suất <span className="font-semibold text-blue-800">{key.possibility}%</span>
                   </p>
                   <div className="bg-gray-300 w-24 h-1 rounded-full ml-2">
                     <div style={{ width: `${key.possibility}%` }} className="h-full bg-blue-800 rounded-full"></div>
@@ -53,7 +53,7 @@ class Disease extends Component {
                 </div>
               </div>
               <div className="diseaseSymptoms mt-4">
-                <h4 className="font-medium text-lg">Disease Symptoms</h4>
+                <h4 className="font-medium text-lg"> Triệu chứng bệnh </h4>
                 <ul className="list-none">
                   {key.disease_symptom.sort().map((item, index) => {
                     return key.symptom_user_has.includes(item) ? (
@@ -72,17 +72,17 @@ class Disease extends Component {
           ))}
         </div>
         <div className="mt-4 text-center text-sm">
-          Always visit a doctor if you have any symptoms of a disease or call your local hospital.
+          Hãy đến gặp bác sĩ nếu bạn có bất kỳ triệu chứng nào của bệnh hoặc gọi cho bệnh viện để nhận được sự hỗ trợ.
         </div>
       </div>
     ) : (
       <div className="w-full p-4 text-black">
         <div className="w-full tablet:grid tablet:grid-cols-12 patientInfo">
-          <h3 className="text-blue-800">Patient gender: Male</h3>
-          <h3 className="text-blue-800">Patient age: 71</h3>
+          <h3 className="text-blue-800">Giới tính: Nam</h3>
+          <h3 className="text-blue-800">Độ tuổi: 40</h3>
         </div>
         <p className="mt-4 text-center text-sm">
-          Cannot determine possible diseases due to lack of symptoms. Please retry the analysis with actual symptoms or call your local hospital if it is an emergency.
+          Không thể xác định các bệnh có thể xảy ra do thiếu triệu chứng. Vui lòng thử lại phân tích với các triệu chứng thực tế hoặc gọi cho bệnh viện địa phương của bạn nếu đó là trường hợp khẩn cấp.
         </p>
       </div>
     );

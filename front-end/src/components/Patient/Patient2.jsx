@@ -30,23 +30,23 @@ class Patient2 extends Component {
     let setObject = () => {
       return [
         {
-          question: "Patient is overweight or obese",
+          question: "Bạn có thừa cân hoặc béo phì?",
           answer: this.state.question_1,
         },
         {
-          question: "Patient smokes cigarettes",
+          question: "Bạn có hút thuốc?",
           answer: this.state.question_2,
         },
         {
-          question: "Patient has been recently injured",
+          question: "Bạn có vừa bị thương",
           answer: this.state.question_3,
         },
         {
-          question: "Patient has high cholesterol",
+          question: "Bạn có cholesterol cao?",
           answer: this.state.question_4,
         },
-        { question: "Patient has hypertension", answer: this.state.question_5 },
-        { question: "Patient has diabetes", answer: this.state.question_6 },
+        { question: "Bạn có bị huyết áp cao?", answer: this.state.question_5 },
+        { question: "Bạn cóm mắc bệnh tiêu đường?", answer: this.state.question_6 },
       ];
     };
 
@@ -91,14 +91,14 @@ class Patient2 extends Component {
       <div id="Patient2" className="tablet:grid-cols-1 px-4">
         <div className="w-full flex flex-col items-center">
           <h2 className="mb-4 text-lg font-semibold">
-            Please check all the statement below that applies to you
+            Vui lòng kiểm tra tất cả các trạng thái bạn đã điền dưới đây
           </h2>
-          <p className="mb-8">Select one answer in each row</p>
+          <p className="mb-8">Chọn một câu trả lời ở mỗi hàng</p>
         </div>
 
         {/* Question 1 */}
         <div className="radioButtonDiv mb-6">
-          <h3 className="mb-2 text-md font-medium">I am overweight</h3>
+          <h3 className="mb-2 text-md font-medium">Thừa cân</h3>
           <form className="usa-form flex items-center space-x-6">
             <div className="usa-radio">
               <input
@@ -111,7 +111,7 @@ class Patient2 extends Component {
                 name="overweight"
               />
               <label className="usa-radio__label ml-2" htmlFor="overweight_Yes">
-                Yes
+                Có
               </label>
             </div>
             <div className="usa-radio">
@@ -125,7 +125,7 @@ class Patient2 extends Component {
                 name="overweight"
               />
               <label className="usa-radio__label ml-2" htmlFor="overweight_No">
-                No
+              Không
               </label>
             </div>
             <div className="usa-radio">
@@ -141,7 +141,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="overweight_doesno">
-                I don't know
+                Tôi không biết
               </label>
             </div>
           </form>
@@ -149,7 +149,7 @@ class Patient2 extends Component {
 
         {/* Question 2 */}
         <div className="radioButtonDiv mb-6">
-          <h3 className="mb-2 text-md font-medium">I smoke cigarettes</h3>
+          <h3 className="mb-2 text-md font-medium">Hút thuốc lá</h3>
           <form className="usa-form flex items-center space-x-6">
             <div className="usa-radio">
               <input
@@ -162,7 +162,7 @@ class Patient2 extends Component {
                 name="cigarettes"
               />
               <label className="usa-radio__label ml-2" htmlFor="cigarettes_yes">
-                Yes
+              Có
               </label>
             </div>
             <div className="usa-radio">
@@ -176,7 +176,7 @@ class Patient2 extends Component {
                 name="cigarettes"
               />
               <label className="usa-radio__label ml-2" htmlFor="cigarettes_no">
-                No
+              Không
               </label>
             </div>
             <div className="usa-radio">
@@ -192,7 +192,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="cigarettes_doesno">
-                I don't know
+                Tôi không biết
               </label>
             </div>
           </form>
@@ -201,7 +201,7 @@ class Patient2 extends Component {
         {/* Question 3 */}
         <div className="radioButtonDiv mb-6">
           <h3 className="mb-2 text-md font-medium">
-            I have been recently injured
+            Gần đây bị thương
           </h3>
           <form className="usa-form flex items-center space-x-6">
             <div className="usa-radio">
@@ -215,7 +215,7 @@ class Patient2 extends Component {
                 name="injury"
               />
               <label className="usa-radio__label ml-2" htmlFor="injury_yes">
-                Yes
+              Có
               </label>
             </div>
             <div className="usa-radio">
@@ -229,7 +229,7 @@ class Patient2 extends Component {
                 name="injury"
               />
               <label className="usa-radio__label ml-2" htmlFor="injury_no">
-                No
+              Không
               </label>
             </div>
             <div className="usa-radio">
@@ -243,7 +243,7 @@ class Patient2 extends Component {
                 name="injury"
               />
               <label className="usa-radio__label ml-2" htmlFor="injury_doesno">
-                I don't know
+               Tôi không biết
               </label>
             </div>
           </form>
@@ -251,7 +251,7 @@ class Patient2 extends Component {
 
         {/* Question 4 */}
         <div className="radioButtonDiv mb-6">
-          <h3 className="mb-2 text-md font-medium">I have high cholesterol</h3>
+          <h3 className="mb-2 text-md font-medium">Nồng độ cholesterol cao</h3>
           <form className="usa-form flex items-center space-x-6">
             <div className="usa-radio">
               <input
@@ -266,7 +266,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="cholesterol_yes">
-                Yes
+                Có
               </label>
             </div>
             <div className="usa-radio">
@@ -280,7 +280,7 @@ class Patient2 extends Component {
                 name="cholesterol"
               />
               <label className="usa-radio__label ml-2" htmlFor="cholesterol_no">
-                No
+              Không
               </label>
             </div>
             <div className="usa-radio">
@@ -296,7 +296,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="cholesterol_doesno">
-                I don't know
+                Tôi không biết
               </label>
             </div>
           </form>
@@ -304,7 +304,7 @@ class Patient2 extends Component {
 
         {/* Question 5 */}
         <div className="radioButtonDiv mb-6">
-          <h3 className="mb-2 text-md font-medium">I have hypertension</h3>
+          <h3 className="mb-2 text-md font-medium">Bị tăng huyết áp</h3>
           <form className="usa-form flex items-center space-x-6">
             <div className="usa-radio">
               <input
@@ -319,7 +319,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="hypertension_yes">
-                Yes
+                Có
               </label>
             </div>
             <div className="usa-radio">
@@ -335,7 +335,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="hypertension_no">
-                No
+                Không
               </label>
             </div>
             <div className="usa-radio">
@@ -351,7 +351,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="hypertension_doesno">
-                I don't know
+                Tôi không biết
               </label>
             </div>
           </form>
@@ -359,7 +359,7 @@ class Patient2 extends Component {
 
         {/* Question 6 */}
         <div className="radioButtonDiv mb-6">
-          <h3 className="mb-2 text-md font-medium">I have diabetes</h3>
+          <h3 className="mb-2 text-md font-medium">Bị tiểu đường</h3>
           <form className="usa-form flex items-center space-x-6">
             <div className="usa-radio">
               <input
@@ -372,7 +372,7 @@ class Patient2 extends Component {
                 name="diabetes"
               />
               <label className="usa-radio__label ml-2" htmlFor="diabetes_yes">
-                Yes
+              Có
               </label>
             </div>
             <div className="usa-radio">
@@ -386,7 +386,7 @@ class Patient2 extends Component {
                 name="diabetes"
               />
               <label className="usa-radio__label ml-2" htmlFor="diabetes_no">
-                No
+              Không
               </label>
             </div>
             <div className="usa-radio">
@@ -402,7 +402,7 @@ class Patient2 extends Component {
               <label
                 className="usa-radio__label ml-2"
                 htmlFor="diabetes_doesno">
-                I don't know
+                Tôi không biết
               </label>
             </div>
           </form>

@@ -54,19 +54,6 @@ model.load_state_dict(torch.load('../models/cnn.pth', map_location=device))
 model.to(device)
 model.eval()
 
-# Load the pre-saved label encoders (assuming you've saved them with pickle)
-categories = ['Gender', 'Age', 'Occupation', 'Sleep Duration', 'Physical Activity Level', 'BMI Category', 'Heart Rate', 'Daily Steps', 'Sleep Disorder']
-# Create a dictionary to hold LabelEncoders for each column
-encoders = {}
-data_ori = pd.read_csv("../healthcare/Sleep_health_and_lifestyle_dataset.csv")
-# Fit LabelEncoders on the categorical columns and transform them
-for col in categories:
-    le = LabelEncoder()
-    data_ori[col] = le.fit_transform(data_ori[col])  # Encode the column
-    encoders[col] = le  # Store the LabelEncoder for future use
-with open('../models/sleep-prediction-weights.pkl', 'rb') as f:
-    sleep_model = pickle.load(f)
-
 # FastAPI initialization
 origins = ["*"]
 app_api = FastAPI()
@@ -117,50 +104,3 @@ async def classify_image(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
-@app_api.post("/sleep-predict/")
-async def predict_sleep_disorder(request: SleepDataRequest):
-    try:
-        # Prepare the input data
-        data = {
-            "Gender": request.gender,
-            "Age": request.age,
-            "Occupation": request.job,
-            "Sleep Duration": request.sleepDuration,
-            "Quality of Sleep": request.sleepQuality,
-            "Physical Activity Level": request.physicalActivity,
-            "Stress Level": request.stressLevelCondition,
-            "BMI Category": request.weight,
-            "Blood Pressure": request.bloodPressure,
-            "Heart Rate": request.heartRate,
-            "Daily Steps": request.dailySteps,
-        }
-
-        new_data = pd.DataFrame(data, index=[0])
-
-        # Preprocessing
-        # Encode the categorical columns using the pre-fitted LabelEncoders
-        for col in categories:
-            if col in new_data.columns:
-                try:
-                    print(new_data[col])
-                    new_data[col] = encoders[col].transform(new_data[col])
-                except ValueError:
-                    print(f"Unseen label found in column '{col}'. Mapping to default.")
-                    new_data[col] = 0  # Map unseen labels to a default value (e.g., 0)
-
-        print(new_data)
-
-        # 4. Use the model to predict sleep disorder
-        output = sleep_model.predict(new_data)
-
-        # Return prediction result
-        if output[0] == 0:
-            prediction = "Giấc ngủ bình thường"
-        elif output[0] == 1:
-            prediction = "Rối loạn giấc ngủ"
-        else:
-            prediction = "Có dấu hiệu của tình trạng ngưng thở khi ngủ"
-        return {"prediction": prediction}
-
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))

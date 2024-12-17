@@ -274,7 +274,8 @@ function ChatBot(props) {
             ) : (
               <div className="chat chat-end">
                 {/* bg-gradient-to-r from-cyan-500 to-blue-500 */}
-                <div className="chat-bubble shadow-xl chat-bubble-primary bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+                  <div className="chat-bubble shadow-xl chat-bubble-primary bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+                  {dataMessages[1][0]}
                   <>
                     <div className="divider m-0"></div>
                     <p className="font-light text-xs text-cyan-50">

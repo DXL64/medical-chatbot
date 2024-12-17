@@ -6,7 +6,6 @@ import { TypeAnimation } from "react-type-animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
 import { useLocation } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
 
 function ChatBot(props) {
   const prevData = useLocation();
@@ -276,7 +275,6 @@ function ChatBot(props) {
               <div className="chat chat-end">
                 {/* bg-gradient-to-r from-cyan-500 to-blue-500 */}
                 <div className="chat-bubble shadow-xl chat-bubble-primary bg-gradient-to-r from-purple-500 to-blue-500 text-white">
-                  <ReactMarkdown>{dataMessages[1][0]}</ReactMarkdown>
                   <>
                     <div className="divider m-0"></div>
                     <p className="font-light text-xs text-cyan-50">
@@ -326,21 +324,25 @@ function ChatBot(props) {
               disabled={isGen}
               onClick={() => SendMessageChat()}
               className={
-                " drop-shadow-md md:col-start-12 rounded-2xl col-start-11 col-end-12 md:col-end-13 btn btn-active btn-primary btn-square bg-gradient-to-tl from-transparent via-blue-600 to-indigo-500"
-              }>
+                "flex items-center justify-center drop-shadow-md md:col-start-12 col-start-11 col-end-12 md:col-end-13 btn btn-active btn-primary rounded-2xl bg-gradient-to-tl from-transparent via-blue-600 to-indigo-500"
+              }
+              style={{
+                width: "60px", // Default size for smaller screens
+                height: "60px",
+              }}>
               <svg
                 stroke="currentColor"
                 fill="none"
-                strokeWidth="2"
+                strokeWidth="1"
                 viewBox="0 0 24 24"
                 color="white"
-                height="15px"
-                width="15px"
+                className="h-4 w-4 md:h-6 md:w-6" // Responsive scaling for the icon
                 xmlns="http://www.w3.org/2000/svg">
                 <line x1="22" y1="2" x2="11" y2="13"></line>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
               </svg>
             </button>
+
             <p className=" text-xs col-start-1 col-end-12 text-justify p-1">
               <b>Lưu ý: </b>Mô hình có thể đưa ra câu trả lời không chính xác ở
               một số trường hợp, vì vậy hãy luôn kiểm chứng thông tin bạn nhé!

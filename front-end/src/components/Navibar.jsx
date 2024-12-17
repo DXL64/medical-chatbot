@@ -19,7 +19,9 @@ const Navibar = () => {
               <em class="usa-logo__text">
                 <div className="flex align-middle items-center font-bold gap-4 my-10">
                   <DHIlab />
-                  <h3 className="display-inline-block padding-left-1">Kiểm tra triệu chứng bệnh</h3>
+                  <h3 className="display-inline-block padding-left-1">
+                    Kiểm tra triệu chứng bệnh
+                  </h3>
                 </div>
               </em>
             </div>

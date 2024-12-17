@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //data
-import { Symptoms } from "../../data/Symptoms";
+import { Symptoms, symptomTranslations } from "../../data/Symptoms";
 import { Diseases } from "../../data/Diseases";
 
 class Symptom extends Component {
@@ -160,7 +160,8 @@ class Symptom extends Component {
                     onClick={this.addSymptomButtonEvent.bind(this)}
                     value={key}
                     className="w-full py-2 px-4 rounded-lg hover:bg-yellow-400 transition ease-in-out duration-200 text-left">
-                    {key}
+                    {symptomTranslations[key] || key}{" "}
+                    {/* Display Vietnamese translation */}
                   </button>
                 </li>
               ))}
@@ -172,7 +173,8 @@ class Symptom extends Component {
               <li
                 key={id}
                 className="inline-block mr-2 mb-2 bg-blue-600 text-white py-2 px-4 rounded-full text-lg">
-                {key}{" "}
+                {symptomTranslations[key] || key}{" "}
+                {/* Display Vietnamese translation */}
                 <button
                   onClick={this.deleteSymptomButtonEvent.bind(this)}
                   value={key}

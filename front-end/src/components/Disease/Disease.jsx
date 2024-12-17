@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { symptomTranslations } from "../../data/Symptoms";
+import { diseasesTranslations } from "../../data/Diseases";
 
 const Disease = ({ patientInfo, disease_with_possibility, gender, age }) => {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ const Disease = ({ patientInfo, disease_with_possibility, gender, age }) => {
             <div className="reportDiv mb-6" key={id}>
               <div className="flex flex-wrap justify-between items-center">
                 <div className="flex items-center titleReport">
-                  <h4 className="text-lg">{key.name}</h4>
+                  <h4 className="text-lg">{diseasesTranslations[key.name]}</h4>
                   <a
                     href={`https://en.wikipedia.org/wiki/${key.name}`}
                     title={"wikipedia"}
@@ -71,7 +72,9 @@ const Disease = ({ patientInfo, disease_with_possibility, gender, age }) => {
                   <button
                     onClick={() =>
                       navigateToChat(
-                        `Tôi cần thêm thông tin về bệnh ${key.name}`
+                        `Tôi cần thêm thông tin về bệnh ${
+                          diseasesTranslations[key.name]
+                        }`
                       )
                     }
                     className="ml-2 bg-green-600 text-white py-1 px-3 rounded-full text-sm">

@@ -15,7 +15,7 @@ export const Diseases = {
     "Pressure chest",
   ],
   "Coronavirus disease 2019": ["Fever", "Dry cough", "Fatigue", "Pain", "Throat sore", "Diarrhea", "Headache", "Loss of taste or smell", "Out of breath", "Pain chest", "Pressure chest"],
-  Diabetes: [
+  "Diabetes": [
     "Polyuria",
     "Polydypsia",
     "Shortness of breath",
@@ -102,7 +102,7 @@ export const Diseases = {
     "Orthopnea",
     "Chest tightness",
   ],
-  Pneumonia: [
+  "Pneumonia": [
     "Cough",
     "Fever",
     "Decreased translucency",
@@ -125,7 +125,7 @@ export const Diseases = {
   ],
   "Failure heart congestive": ["Shortness of breath", "Orthopnea", "Jugular venous distention", "Rale", "Dyspnea", "Cough", "Wheezing"],
   "Accident\u00a0cerebrovascular": ["Dysarthria", "Asthenia", "Speech slurred", "Facial paresis", "Hemiplegia", "Unresponsiveness", "Seizure", "Numbness"],
-  Asthma: ["Wheezing", "Cough", "Shortness of breath", "Chest tightness", "Non-productive cough", "Pleuritic pain", "Productive cough", "Symptom aggravating factors", "Distress respiratory"],
+  "Asthma": ["Wheezing", "Cough", "Shortness of breath", "Chest tightness", "Non-productive cough", "Pleuritic pain", "Productive cough", "Symptom aggravating factors", "Distress respiratory"],
   "Myocardial infarction": [
     "Pain chest",
     "St segment elevation",
@@ -147,7 +147,7 @@ export const Diseases = {
     "Bradycardia",
     "Syncope",
   ],
-  Hypercholesterolemia: [
+  "Hypercholesterolemia": [
     "Pain",
     "Pain chest",
     "Sweat",
@@ -164,7 +164,7 @@ export const Diseases = {
     "Bradycardia",
     "Dyspnea",
   ],
-  Infection: ["Fever", "Erythema", "Decreased translucency", "Hepatosplenomegaly", "Chill", "Pruritus", "Diarrhea", "Abscess bacterial", "Swelling", "Pain", "Apyrexial", "Cough"],
+  "Infection": ["Fever", "Erythema", "Decreased translucency", "Hepatosplenomegaly", "Chill", "Pruritus", "Diarrhea", "Abscess bacterial", "Swelling", "Pain", "Apyrexial", "Cough"],
   "Infection urinary tract": [
     "Fever",
     "Dysuria",
@@ -179,7 +179,7 @@ export const Diseases = {
     "Mental status changes",
     "Consciousness clear",
   ],
-  Anemia: [
+  "Anemia": [
     "Chill",
     "Guaiac positive",
     "Monoclonal",
@@ -213,7 +213,7 @@ export const Diseases = {
     "Patient non compliance",
     "Chest tightness",
   ],
-  Dementia: [
+  "Dementia": [
     "Fever",
     "Fall",
     "Unresponsiveness",
@@ -252,7 +252,7 @@ export const Diseases = {
     "Swelling",
     "Hypokinesia",
   ],
-  Confusion: [
+  "Confusion": [
     "Seizure",
     "Enuresis",
     "Lethargy",
@@ -287,7 +287,7 @@ export const Diseases = {
     "Stiffness",
     "Unsteady gait",
   ],
-  Hypothyroidism: [
+  "Hypothyroidism": [
     "Shortness of breath",
     "Prostatism",
     "Drowsiness",
@@ -380,7 +380,7 @@ export const Diseases = {
     "Hypotonic",
     "Feeling suicidal",
   ],
-  Hiv: [
+  "Hiv": [
     "Fever",
     "Night sweat",
     "Spontaneous rupture of membranes",
@@ -414,7 +414,7 @@ export const Diseases = {
     "Hypotonic",
     "Feeling suicidal",
   ],
-  Cellulitis: [
+  "Cellulitis": [
     "Erythema",
     "Pain",
     "Swelling",
@@ -450,7 +450,7 @@ export const Diseases = {
     "Sweating increased",
     "Asthenia",
   ],
-  Septicemia: [
+  "Septicemia": [
     "Fever",
     "Distress respiratory",
     "Hypotension",
@@ -512,7 +512,7 @@ export const Diseases = {
     "Non-productive cough",
     "Redness",
   ],
-  Dehydration: [
+  "Dehydration": [
     "Fever",
     "Diarrhea",
     "Vomiting",
@@ -531,7 +531,7 @@ export const Diseases = {
     "Blackout",
     "History of - blackout",
   ],
-  Neoplasm: [
+  "Neoplasm": [
     "Mass of body structure",
     "Lesion",
     "Pain chest",
@@ -567,8 +567,8 @@ export const Diseases = {
     "Apyrexial",
     "Non-productive cough",
   ],
-  Epilepsy: ["Seizure", "Hypometabolism", "Aura", "Muscle twitch", "Drowsiness", "Tremor", "Unresponsiveness", "Hemiplegia", "Myoclonus", "Gurgle", "Sleepy", "Lethargy", "Wheelchair bound"],
-  Cardiomyopathy: [
+  "Epilepsy": ["Seizure", "Hypometabolism", "Aura", "Muscle twitch", "Drowsiness", "Tremor", "Unresponsiveness", "Hemiplegia", "Myoclonus", "Gurgle", "Sleepy", "Lethargy", "Wheelchair bound"],
+  "Cardiomyopathy": [
     "Shortness of breath",
     "Orthopnea",
     "Hypokinesia",
@@ -609,7 +609,7 @@ export const Diseases = {
     "Unresponsiveness",
     "Yellow sputum",
   ],
-  Carcinoma: [
+  "Carcinoma": [
     "Mass of body structure",
     "Pain",
     "Lesion",
@@ -671,7 +671,7 @@ export const Diseases = {
     "Nightmare",
     "Consciousness clear",
   ],
-  Hyperlipidemia: [
+  "Hyperlipidemia": [
     "Pain chest",
     "Angina pectoris",
     "Palpitation",
@@ -716,7 +716,7 @@ export const Diseases = {
     "Tremor",
     "Exhaustion",
   ],
-  Obesity: [
+  "Obesity": [
     "Pain",
     "Catatonia",
     "Snore",
@@ -730,7 +730,7 @@ export const Diseases = {
     "Mood depressed",
     "Ecchymosis",
   ],
-  Ischemia: [
+  "Ischemia": [
     "Drowsiness",
     "Sleepy",
     "Pain chest",
@@ -747,7 +747,7 @@ export const Diseases = {
     "Asymptomatic",
     "Anorexia",
   ],
-  Cirrhosis: [
+  "Cirrhosis": [
     "Ascites",
     "Fall",
     "Splenomegaly",
@@ -761,7 +761,7 @@ export const Diseases = {
     "Sore to touch",
     "Bleeding of vagina",
   ],
-  Exanthema: ["Fever", "Pruritus", "Macule", "Lesion", "Redness", "Headache", "Apyrexial", "Arthralgia", "Swelling", "Erythema", "Photophobia", "Chill", "Scratch marks", "Pain", "Painful swallowing"],
+  "Exanthema": ["Fever", "Pruritus", "Macule", "Lesion", "Redness", "Headache", "Apyrexial", "Arthralgia", "Swelling", "Erythema", "Photophobia", "Chill", "Scratch marks", "Pain", "Painful swallowing"],
   "Benign prostatic hypertrophy": ["Mental status changes", "Cachexia", "Blackout", "Orthostasis", "Orthopnea", "Night sweat", "Distress respiratory", "Anorexia", "Dysarthria"],
   "Kidney failure acute": [
     "Hyperkalemia",
@@ -791,8 +791,8 @@ export const Diseases = {
     "Cardiomegaly",
     "Chest discomfort",
   ],
-  Arthritis: ["Pain", "Hemodynamically stable", "Sleeplessness", "Asthenia", "Syncope", "Swelling", "Atypia", "General unsteadiness", "Shortness of breath", "Distended abdomen"],
-  Bronchitis: [
+  "Arthritis": ["Pain", "Hemodynamically stable", "Sleeplessness", "Asthenia", "Syncope", "Swelling", "Atypia", "General unsteadiness", "Shortness of breath", "Distended abdomen"],
+  "Bronchitis": [
     "Cough",
     "Wheezing",
     "Shortness of breath",
@@ -811,7 +811,7 @@ export const Diseases = {
     "Stridor",
     "Decreased body weight",
   ],
-  Hemiparesis: [
+  "Hemiparesis": [
     "Dysarthria",
     "Paresis",
     "Asthenia",
@@ -832,7 +832,7 @@ export const Diseases = {
     "Clonus",
     "Facial paresis",
   ],
-  Osteoporosis: [
+  "Osteoporosis": [
     "Prostatism",
     "Fall",
     "Hirsutism",
@@ -867,7 +867,7 @@ export const Diseases = {
     "Rambling speech",
     "Clumsiness",
   ],
-  Adenocarcinoma: [
+  "Adenocarcinoma": [
     "Mass of body structure",
     "Lesion",
     "Decreased body weight",
@@ -882,7 +882,7 @@ export const Diseases = {
     "Scar tissue",
     "Pain abdominal",
   ],
-  Paranoia: [
+  "Paranoia": [
     "Hallucinations auditory",
     "Hallucinations visual",
     "Agitation",
@@ -901,8 +901,8 @@ export const Diseases = {
     "Blackout",
     "Loose associations",
   ],
-  Pancreatitis: ["Vomiting", "Pain abdominal", "Nausea", "Pain", "Diarrhea", "Stool color yellow", "Rigor - temperature-associated observation", "Apyrexial", "Sore to touch"],
-  Incontinence: [
+  "Pancreatitis": ["Vomiting", "Pain abdominal", "Nausea", "Pain", "Diarrhea", "Stool color yellow", "Rigor - temperature-associated observation", "Apyrexial", "Sore to touch"],
+  "Incontinence": [
     "Paraparesis",
     "Seizure",
     "Asthenia",
@@ -933,7 +933,7 @@ export const Diseases = {
     "Cough",
     "Dyspnea",
   ],
-  Hernia: [
+  "Hernia": [
     "Pain abdominal",
     "Pain",
     "Hyperventilation",
@@ -1079,7 +1079,7 @@ export const Diseases = {
     "Swelling",
     "Formication",
   ],
-  Schizophrenia: [
+  "Schizophrenia": [
     "Hallucinations auditory",
     "Hypersomnolence",
     "Irritable mood",
@@ -1093,7 +1093,7 @@ export const Diseases = {
     "Underweight",
     "Homelessness",
   ],
-  Diverticulitis: [
+  "Diverticulitis": [
     "Pain abdominal",
     "Abscess bacterial",
     "Dullness",
@@ -1130,7 +1130,7 @@ export const Diseases = {
     "Distended abdomen",
   ],
   "Ulcer peptic": ["Pain abdominal", "Paraparesis", "Nausea", "Vomiting", "Polymyalgia", "Out of breath", "Pain chest", "Hemiplegia", "Gurgle", "Hunger", "Apyrexial", "Nervousness"],
-  Osteomyelitis: [
+  "Osteomyelitis": [
     "Pain",
     "Redness",
     "Prostate tender",
@@ -1144,7 +1144,7 @@ export const Diseases = {
     "Pain foot",
     "Urinary hesitation",
   ],
-  Gastritis: [
+  "Gastritis": [
     "Heme positive",
     "Pain abdominal",
     "Vomiting",
@@ -1158,7 +1158,7 @@ export const Diseases = {
     "Sore to touch",
     "Dizziness",
   ],
-  Bacteremia: [
+  "Bacteremia": [
     "Fever",
     "Chill",
     "Flushing",
@@ -1236,7 +1236,7 @@ export const Diseases = {
     "Symptom aggravating factors",
     "Hemodynamically stable",
   ],
-  Hepatitis: [
+  "Hepatitis": [
     "Ascites",
     "Spontaneous rupture of membranes",
     "Tachypnea",
@@ -1278,9 +1278,9 @@ export const Diseases = {
     "Lesion",
     "Side pain",
   ],
-  Gout: ["Hot flush", "Pain", "Redness", "Swelling", "Erythema", "Emphysematous change", "Sore to touch", "Hypokinesia", "Ascites", "Patient non compliance"],
-  Thrombocytopaenia: ["Ecchymosis", "Monocytosis", "Posterior\u00a0rhinorrhea", "Haemorrhage", "Tachypnea", "Fever", "Pruritus", "Hypotension", "Fatigue"],
-  Hypoglycemia: [
+  "Gout": ["Hot flush", "Pain", "Redness", "Swelling", "Erythema", "Emphysematous change", "Sore to touch", "Hypokinesia", "Ascites", "Patient non compliance"],
+  "Thrombocytopaenia": ["Ecchymosis", "Monocytosis", "Posterior\u00a0rhinorrhea", "Haemorrhage", "Tachypnea", "Fever", "Pruritus", "Hypotension", "Fatigue"],
+  "Hypoglycemia": [
     "Unresponsiveness",
     "Hypothermia, natural",
     "Incoherent",
@@ -1311,7 +1311,7 @@ export const Diseases = {
     "Diarrhea",
     "Pain abdominal",
   ],
-  Colitis: [
+  "Colitis": [
     "Fever",
     "Thicken",
     "Green sputum",
@@ -1326,7 +1326,7 @@ export const Diseases = {
     "Pain abdominal",
     "Hemodynamically stable",
   ],
-  Diverticulosis: [
+  "Diverticulosis": [
     "Fecaluria",
     "Constipation",
     "Abscess bacterial",
@@ -1409,7 +1409,7 @@ export const Diseases = {
     "Night sweat",
     "Mass of body structure",
   ],
-  Lymphoma: [
+  "Lymphoma": [
     "Lesion",
     "Fever",
     "Welt",
@@ -1424,7 +1424,7 @@ export const Diseases = {
     "Polydypsia",
     "Difficulty passing urine",
   ],
-  Hyperglycemia: [
+  "Hyperglycemia": [
     "Sore to touch",
     "Pruritus",
     "Feeling strange",
@@ -1438,7 +1438,7 @@ export const Diseases = {
     "Ascites",
     "Seizure",
   ],
-  Encephalopathy: [
+  "Encephalopathy": [
     "Uncoordination",
     "Asterixis",
     "Haemorrhage",
@@ -1475,7 +1475,7 @@ export const Diseases = {
     "Cough",
     "Fever",
   ],
-  Candidiasis: [
+  "Candidiasis": [
     "Diarrhea",
     "Throat sore",
     "Decreased body weight",
@@ -1493,7 +1493,7 @@ export const Diseases = {
     "Adverse effect",
     "Abdominal bloating",
   ],
-  Oralcandidiasis: [
+  "Oralcandidiasis": [
     "Diarrhea",
     "Throat sore",
     "Decreased body weight",
@@ -1511,7 +1511,7 @@ export const Diseases = {
     "Adverse effect",
     "Abdominal bloating",
   ],
-  Neuropathy: ["Asthenia", "Numbness", "Nausea and vomiting", "Awakening early", "Hydropneumothorax", "Superimposition", "Fatigability", "Tenesmus", "Pain", "Slowing of urinary stream"],
+  "Neuropathy": ["Asthenia", "Numbness", "Nausea and vomiting", "Awakening early", "Hydropneumothorax", "Superimposition", "Fatigability", "Tenesmus", "Pain", "Slowing of urinary stream"],
   "Kidney disease": ["Shortness of breath", "Hyperkalemia", "Pain chest", "Fever", "Gravida 0", "Bleeding of vagina"],
   "Fibroid tumor": [
     "Haemorrhage",
@@ -1526,7 +1526,7 @@ export const Diseases = {
     "Abnormally hard consistency",
     "Proteinemia",
   ],
-  Glaucoma: ["Fall", "Distended abdomen", "Unsteady gait", "Paresthesia", "Hyponatremia", "Agitation", "Unconscious state", "Burning sensation", "Lesion", "Mass of body structure"],
+  "Glaucoma": ["Fall", "Distended abdomen", "Unsteady gait", "Paresthesia", "Hyponatremia", "Agitation", "Unconscious state", "Burning sensation", "Lesion", "Mass of body structure"],
   "Neoplasm metastasis": ["Thicken", "Tumor cell invasion", "Metastatic lesion", "Pain neck", "Lung nodule", "Pain", "Pain abdominal", "Food intolerance", "Mass of body structure", "Atypia"],
   "Malignant tumor of colon": [
     "Lesion",
@@ -1650,8 +1650,8 @@ export const Diseases = {
     "Lesion",
     "Redness",
   ],
-  Melanoma: ["Mass of body structure", "Paraparesis", "Fever", "Gravida 0", "Pain", "Pruritus", "Mass in breast", "Vomiting", "Diarrhea"],
-  Gastroenteritis: [
+  "Melanoma": ["Mass of body structure", "Paraparesis", "Fever", "Gravida 0", "Pain", "Pruritus", "Mass in breast", "Vomiting", "Diarrhea"],
+  "Gastroenteritis": [
     "Pain abdominal",
     "Breath-holding spell",
     "Nausea",
@@ -1780,7 +1780,7 @@ export const Diseases = {
     "Tenesmus",
     "Constipation",
   ],
-  Hemorrhoids: [
+  "Hemorrhoids": [
     "Haemorrhage",
     "Bowel sounds decreased",
     "Decreased stool caliber",
@@ -1817,7 +1817,7 @@ export const Diseases = {
     "Hemiplegia",
     "Fremitus",
   ],
-  Aphasia: ["Clonus", "Egophony", "Facial paresis", "Aphagia", "Muscle twitch", "Paralyse", "Low back pain", "Charleyhorse"],
+  "Aphasia": ["Clonus", "Egophony", "Facial paresis", "Aphagia", "Muscle twitch", "Paralyse", "Low back pain", "Charleyhorse"],
   "Obesity morbid": [
     "Out of breath",
     "Sedentary",
@@ -1833,8 +1833,8 @@ export const Diseases = {
     "Renal angle tenderness",
     "Feels hot/feverish",
   ],
-  Pyelonephritis: ["Fever", "Pain", "Urgency of\u00a0micturition", "Hematuria", "Vomiting", "Chill", "Diarrhea", "Nausea", "Pain abdominal", "Myalgia", "Fever", "Chill"],
-  Endocarditis: [
+  "Pyelonephritis": ["Fever", "Pain", "Urgency of\u00a0micturition", "Hematuria", "Vomiting", "Chill", "Diarrhea", "Nausea", "Pain abdominal", "Myalgia", "Fever", "Chill"],
+  "Endocarditis": [
     "Pleuritic pain",
     "Thicken",
     "Myalgia",
@@ -1898,8 +1898,8 @@ export const Diseases = {
     "Breath sounds decreased",
     "Shortness of breath",
   ],
-  Pneumothorax: ["Dyspnea", "Cardiovascular finding", "Cardiovascular event", "Haemoptysis", "Cough", "Hypercapnia", "Soft tissue swelling", "Prostatism", "Agitation"],
-  Delirium: [
+  "Pneumothorax": ["Dyspnea", "Cardiovascular finding", "Cardiovascular event", "Haemoptysis", "Cough", "Hypercapnia", "Soft tissue swelling", "Prostatism", "Agitation"],
+  "Delirium": [
     "Unsteady gait",
     "Withdraw",
     "Hyponatremia",
@@ -1914,7 +1914,7 @@ export const Diseases = {
     "Fever",
     "Diarrhea",
   ],
-  Neutropenia: [
+  "Neutropenia": [
     "Transaminitis",
     "Splenomegaly",
     "Night sweat",
@@ -1929,8 +1929,8 @@ export const Diseases = {
     "Rhd positive",
     "Distress respiratory",
   ],
-  Hyperbilirubinemia: ["Cyanosis", "Tachypnea", "Bradycardia", "Breech presentation", "Cushingoid facies", "Cushingoid\u00a0habitus", "Cough", "Myalgia"],
-  Influenza: [
+  "Hyperbilirubinemia": ["Cyanosis", "Tachypnea", "Bradycardia", "Breech presentation", "Cushingoid facies", "Cushingoid\u00a0habitus", "Cough", "Myalgia"],
+  "Influenza": [
     "Uncoordination",
     "Fever",
     "Pleuritic pain",
@@ -1953,8 +1953,8 @@ export const Diseases = {
     "Blackout",
     "Extreme exhaustion",
   ],
-  Dependence: ["Intoxication", "Tremor", "Agitation", "Suicidal", "Homelessness", "Prostatism", "Lethargy", "Seizure", "Muscle twitch", "Stuffy nose", "Feeling hopeless", "Heavy legs", "Rale"],
-  Thrombus: [
+  "Dependence": ["Intoxication", "Tremor", "Agitation", "Suicidal", "Homelessness", "Prostatism", "Lethargy", "Seizure", "Muscle twitch", "Stuffy nose", "Feeling hopeless", "Heavy legs", "Rale"],
+  "Thrombus": [
     "Hypokinesia",
     "Anorexia",
     "Hypertonicity",
@@ -1967,7 +1967,7 @@ export const Diseases = {
     "Vomiting",
     "Stool color yellow",
   ],
-  Cholecystitis: [
+  "Cholecystitis": [
     "Moan",
     "Nausea",
     "Pain abdominal",
@@ -2005,8 +2005,8 @@ export const Diseases = {
     "Photophobia",
   ],
   "Migraine disorders": ["Ambidexterity", "Vomiting", "Dizziness", "Numbness", "Nausea", "Fever", "Splenomegaly"],
-  Pancytopenia: ["Hypoproteinemia", "Fatigue", "Haemorrhage", "Fatigability", "Cushingoid facies", "Cushingoid\u00a0habitus", "Stool color yellow", "Colic abdominal"],
-  Cholelithiasis: ["Vomiting", "Nausea", "Pain abdominal", "Pain", "Cushingoid facies", "Cushingoid\u00a0habitus", "Ascites", "Thicken", "Sore to touch", "Diarrhea", "Apyrexial", "Palpitation"],
+  "Pancytopenia": ["Hypoproteinemia", "Fatigue", "Haemorrhage", "Fatigability", "Cushingoid facies", "Cushingoid\u00a0habitus", "Stool color yellow", "Colic abdominal"],
+  "Cholelithiasis": ["Vomiting", "Nausea", "Pain abdominal", "Pain", "Cushingoid facies", "Cushingoid\u00a0habitus", "Ascites", "Thicken", "Sore to touch", "Diarrhea", "Apyrexial", "Palpitation"],
   "Biliary calculus": ["Vomiting", "Nausea", "Pain abdominal", "Pain", "Cushingoid facies", "Cushingoid\u00a0habitus", "Ascites", "Thicken", "Sore to touch", "Diarrhea", "Apyrexial", "Palpitation"],
   "Tachycardia sinus": [
     "Left\u00a0atrial\u00a0hypertrophy",
@@ -2023,7 +2023,7 @@ export const Diseases = {
     "Vomiting",
     "Pain abdominal",
   ],
-  Ileus: [
+  "Ileus": [
     "Abscess bacterial",
     "Abdomen acute",
     "Air fluid level",
@@ -2040,7 +2040,7 @@ export const Diseases = {
     "Gravida 0",
     "Pain abdominal",
   ],
-  Adhesion: [
+  "Adhesion": [
     "Flatulence",
     "Pain",
     "Large-for-dates fetus",
@@ -2054,7 +2054,7 @@ export const Diseases = {
     "Hallucinations visual",
     "Feeling suicidal",
   ],
-  Delusion: [
+  "Delusion": [
     "Loose associations",
     "Giddy mood",
     "Feeling hopeless",

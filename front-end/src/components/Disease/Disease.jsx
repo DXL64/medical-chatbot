@@ -3,7 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { symptomTranslations } from "../../data/Symptoms";
 import { diseasesTranslations } from "../../data/Diseases";
 
-const Disease = ({ patientInfo, disease_with_possibility, gender, age }) => {
+const Disease = ({
+  patientInfo,
+  user_symptoms,
+  disease_with_possibility,
+  gender,
+  age,
+}) => {
   const navigate = useNavigate();
 
   // Handle navigation to chat

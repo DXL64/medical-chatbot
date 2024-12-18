@@ -7,8 +7,8 @@ import ImagePrediction from "./components/ImagePrediction.jsx";
 import FAQPage from "./pages/FAQPage";
 import IssuePage from "./pages/IssuePage";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
 import HealthCare from "./components/HealthCare.jsx";
+import SymptomChecker from "./components/SymptomChecker";
 
 function App() {
   useEffect(() => {}, []);
@@ -20,7 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="chat" element={<ChatBot />} />
-          <Route path="healthcare" element={<HealthCare />} />
+          <Route path="symptomps" element={<HealthCare />} />
+          <Route path="healthcare" element={<SymptomChecker />} />
           <Route path="image-predict" element={<ImagePrediction />} />
           <Route path="issue" element={<IssuePage />} />
           <Route path="faq" element={<FAQPage />} />

@@ -154,7 +154,7 @@ class HealthCare extends Component {
       });
     }
   };
-  handleResetClick = () => { };
+  handleResetClick = () => {};
   get_previous_page = (e) => {
     switch (this.state.current_page) {
       case "Disease":
@@ -230,6 +230,7 @@ class HealthCare extends Component {
         return (
           <Disease
             patientInfo={this.state.patient_question}
+            user_symptoms={this.state.user_symptoms}
             disease_with_possibility={this.state.disease_possibility}
             gender={this.state.gender}
             age={this.state.age}
@@ -265,36 +266,41 @@ class HealthCare extends Component {
                   <ul className="side-menu-list padding-left-2">
                     <li id="progressbar">
                       <div
-                        className={`${tab_progress === 25 && "progressbardiv25"
-                          } ${tab_progress === 50 && "progressbardiv50"} ${tab_progress === 75 && "progressbardiv75"
-                          } ${tab_progress === 100 && "progressbardiv100"
-                          }`}></div>
+                        className={`${
+                          tab_progress === 25 && "progressbardiv25"
+                        } ${tab_progress === 50 && "progressbardiv50"} ${
+                          tab_progress === 75 && "progressbardiv75"
+                        } ${
+                          tab_progress === 100 && "progressbardiv100"
+                        }`}></div>
                     </li>
                     <li
-                      className={`${current_page === "Home" ? "active" : "done"
-                        }`}>
+                      className={`${
+                        current_page === "Home" ? "active" : "done"
+                      }`}>
                       Chào mừng
                     </li>
                     <li
-                      className={`${tab_progress === 50 && "active"} ${tab_progress < 50 && "list"
-                        } ${tab_progress > 50 && "done"}`}>
+                      className={`${tab_progress === 50 && "active"} ${
+                        tab_progress < 50 && "list"
+                      } ${tab_progress > 50 && "done"}`}>
                       Thông tin bệnh nhân
                     </li>
                     <li
-                      className={`${tab_progress === 75 && "active"} ${tab_progress < 75 && "list"
-                        } ${tab_progress > 75 && "done"}`}>
+                      className={`${tab_progress === 75 && "active"} ${
+                        tab_progress < 75 && "list"
+                      } ${tab_progress > 75 && "done"}`}>
                       Triệu chứng
                     </li>
                     <li
-                      className={`${tab_progress === 100 && "active"} ${tab_progress < 100 && "list"
-                        } ${tab_progress > 100 && "done"}`}>
+                      className={`${tab_progress === 100 && "active"} ${
+                        tab_progress < 100 && "list"
+                      } ${tab_progress > 100 && "done"}`}>
                       Dự đoán bệnh
                     </li>
                   </ul>
                 </div>
-                <div
-                  className="col-span-10 "
-                  id="ContentDiv padding-bottom-3">
+                <div className="col-span-10 " id="ContentDiv padding-bottom-3">
                   <div className="grid-row padding-bottom-4 shoPageSection">
                     {this.showPage()}
                   </div>
@@ -311,12 +317,13 @@ class HealthCare extends Component {
                     </button>
                     {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
                     <button
-                      className={`usa-button btn btn-primary ${button_is_disabled ||
+                      className={`usa-button btn btn-primary ${
+                        button_is_disabled ||
                         patient_2_next_button_disabled ||
                         user_symptom_length === 0
-                        ? ""
-                        : "next"
-                        }`}
+                          ? ""
+                          : "next"
+                      }`}
                       disabled={
                         button_is_disabled ||
                         patient_2_next_button_disabled ||

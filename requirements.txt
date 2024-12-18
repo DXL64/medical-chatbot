@@ -120,3 +120,7 @@ scikit-learn
 nbformat==4.2.0
 xgboost
 catboost
+opencv-python
+langchain-community
+langchain-core
+openpyxl

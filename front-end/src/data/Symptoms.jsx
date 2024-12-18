@@ -809,3 +809,661 @@ export const symptomTranslations = {
   Worry: "Lo lắng",
   "Yellow sputum": "Đờm vàng",
 };
+
+export const Symptoms2 = [
+  {
+    id: "1",
+    name: "Ngứa",
+    code: "itching",
+  },
+  {
+    id: "2",
+    name: "Phát ban da",
+    code: "skin_rash",
+  },
+  {
+    id: "3",
+    name: "Nodal da phun trào",
+    code: "nodal_skin_eruptions",
+  },
+  {
+    id: "4",
+    name: "Các bản vá không phân tán",
+    code: "dischromic _patches",
+  },
+  {
+    id: "5",
+    name: "Hắt hơi liên tục",
+    code: "continuous_sneezing",
+  },
+  {
+    id: "6",
+    name: "Rùng mình",
+    code: "shivering",
+  },
+  {
+    id: "7",
+    name: "Ớn lạnh",
+    code: "chills",
+  },
+  {
+    id: "8",
+    name: "Tưới nước từ mắt",
+    code: "watering_from_eyes",
+  },
+  {
+    id: "9",
+    name: "Đau dạ dày",
+    code: "stomach_pain",
+  },
+  {
+    id: "10",
+    name: "Tính axit",
+    code: "acidity",
+  },
+  {
+    id: "11",
+    name: "Loét trên lưỡi",
+    code: "ulcers_on_tongue",
+  },
+  {
+    id: "12",
+    name: "Nôn",
+    code: "vomiting",
+  },
+  {
+    id: "13",
+    name: "Ho",
+    code: "cough",
+  },
+  {
+    id: "14",
+    name: "Đau ngực",
+    code: "chest_pain",
+  },
+  {
+    id: "15",
+    name: "Da vàng",
+    code: "yellowish_skin",
+  },
+  {
+    id: "16",
+    name: "Buồn nôn",
+    code: "nausea",
+  },
+  {
+    id: "17",
+    name: "Mất sự thèm ăn",
+    code: "loss_of_appetite",
+  },
+  {
+    id: "18",
+    name: "Đau bụng",
+    code: "abdominal_pain",
+  },
+  {
+    id: "19",
+    name: "Màu vàng của đôi mắt",
+    code: "yellowing_of_eyes",
+  },
+  {
+    id: "20",
+    name: "Đốt cháy micturition",
+    code: "burning_micturition",
+  },
+  {
+    id: "21",
+    name: "Phát hiện đi tiểu",
+    code: "spotting_ urination",
+  },
+  {
+    id: "22",
+    name: "Thông qua khí",
+    code: "passage_of_gases",
+  },
+  {
+    id: "23",
+    name: "Ngứa nội bộ",
+    code: "internal_itching",
+  },
+  {
+    id: "24",
+    name: "Khó tiêu",
+    code: "indigestion",
+  },
+  {
+    id: "25",
+    name: "Lãng phí cơ bắp",
+    code: "muscle_wasting",
+  },
+  {
+    id: "26",
+    name: "Bản vá trong cổ họng",
+    code: "patches_in_throat",
+  },
+  {
+    id: "27",
+    name: "Sốt cao",
+    code: "high_fever",
+  },
+  {
+    id: "28",
+    name: "Liên hệ hôn nhân thêm",
+    code: "extra_marital_contacts",
+  },
+  {
+    id: "29",
+    name: "Mệt mỏi",
+    code: "fatigue",
+  },
+  {
+    id: "30",
+    name: "Giảm cân",
+    code: "weight_loss",
+  },
+  {
+    id: "31",
+    name: "Bồn chồn",
+    code: "restlessness",
+  },
+  {
+    id: "32",
+    name: "Thờ ơ",
+    code: "lethargy",
+  },
+  {
+    id: "33",
+    name: "Mức đường không đều",
+    code: "irregular_sugar_level",
+  },
+  {
+    id: "34",
+    name: "Tầm nhìn mờ và méo",
+    code: "blurred_and_distorted_vision",
+  },
+  {
+    id: "35",
+    name: "Béo phì",
+    code: "obesity",
+  },
+  {
+    id: "36",
+    name: "Đói quá mức",
+    code: "excessive_hunger",
+  },
+  {
+    id: "37",
+    name: "Tăng sự thèm ăn",
+    code: "increased_appetite",
+  },
+  {
+    id: "38",
+    name: "Đa niệu",
+    code: "polyuria",
+  },
+  {
+    id: "39",
+    name: "Mắt chìm",
+    code: "sunken_eyes",
+  },
+  {
+    id: "40",
+    name: "Mất nước",
+    code: "dehydration",
+  },
+  {
+    id: "41",
+    name: "Tiêu chảy",
+    code: "diarrhoea",
+  },
+  {
+    id: "42",
+    name: "Hơi thở",
+    code: "breathlessness",
+  },
+  {
+    id: "43",
+    name: "Lịch sử gia đình",
+    code: "family_history",
+  },
+  {
+    id: "44",
+    name: "Núm vú",
+    code: "mucoid_sputum",
+  },
+  {
+    id: "45",
+    name: "Đau đầu",
+    code: "headache",
+  },
+  {
+    id: "46",
+    name: "Chóng mặt",
+    code: "dizziness",
+  },
+  {
+    id: "47",
+    name: "Mất thăng bằng",
+    code: "loss_of_balance",
+  },
+  {
+    id: "48",
+    name: "Thiếu nồng độ",
+    code: "lack_of_concentration",
+  },
+  {
+    id: "49",
+    name: "Cổ cứng",
+    code: "stiff_neck",
+  },
+  {
+    id: "50",
+    name: "Trầm cảm",
+    code: "depression",
+  },
+  {
+    id: "51",
+    name: "Khó chịu",
+    code: "irritability",
+  },
+  {
+    id: "52",
+    name: "Rối loạn thị giác",
+    code: "visual_disturbances",
+  },
+  {
+    id: "53",
+    name: "Đau lưng",
+    code: "back_pain",
+  },
+  {
+    id: "54",
+    name: "Điểm yếu trong chi",
+    code: "weakness_in_limbs",
+  },
+  {
+    id: "55",
+    name: "Đau cổ",
+    code: "neck_pain",
+  },
+  {
+    id: "56",
+    name: "Điểm yếu của một bên cơ thể",
+    code: "weakness_of_one_body_side",
+  },
+  {
+    id: "57",
+    name: "Thay đổi cảm biến",
+    code: "altered_sensorium",
+  },
+  {
+    id: "58",
+    name: "Nước tiểu sẫm màu",
+    code: "dark_urine",
+  },
+  {
+    id: "59",
+    name: "Đổ mồ hôi",
+    code: "sweating",
+  },
+  {
+    id: "60",
+    name: "Đau cơ",
+    code: "muscle_pain",
+  },
+  {
+    id: "61",
+    name: "Sốt nhẹ",
+    code: "mild_fever",
+  },
+  {
+    id: "62",
+    name: "Các hạch bạch huyết sưng",
+    code: "swelled_lymph_nodes",
+  },
+  {
+    id: "63",
+    name: "Bất ổn",
+    code: "malaise",
+  },
+  {
+    id: "64",
+    name: "Đốm đỏ trên cơ thể",
+    code: "red_spots_over_body",
+  },
+  {
+    id: "65",
+    name: "Đau khớp",
+    code: "joint_pain",
+  },
+  {
+    id: "66",
+    name: "Nỗi đau sau mắt",
+    code: "pain_behind_the_eyes",
+  },
+  {
+    id: "67",
+    name: "Táo bón",
+    code: "constipation",
+  },
+  {
+    id: "68",
+    name: "Nhìn độc hại (typhos)",
+    code: "toxic_look_(typhos)",
+  },
+  {
+    id: "69",
+    name: "Đau bụng",
+    code: "belly_pain",
+  },
+  {
+    id: "70",
+    name: "Nước tiểu màu vàng",
+    code: "yellow_urine",
+  },
+  {
+    id: "71",
+    name: "Nhận truyền máu",
+    code: "receiving_blood_transfusion",
+  },
+  {
+    id: "72",
+    name: "Nhận được tiêm không bằng cấp",
+    code: "receiving_unsterile_injections",
+  },
+  {
+    id: "73",
+    name: "Hôn mê",
+    code: "coma",
+  },
+  {
+    id: "74",
+    name: "Dạ dày chảy máu",
+    code: "stomach_bleeding",
+  },
+  {
+    id: "75",
+    name: "Suy gan cấp tính",
+    code: "acute_liver_failure",
+  },
+  {
+    id: "76",
+    name: "Sưng dạ dày",
+    code: "swelling_of_stomach",
+  },
+  {
+    id: "77",
+    name: "Sự xáo trộn của bụng",
+    code: "distention_of_abdomen",
+  },
+  {
+    id: "78",
+    name: "Lịch sử tiêu thụ rượu",
+    code: "history_of_alcohol_consumption",
+  },
+  {
+    id: "79",
+    name: "Quá tải chất lỏng",
+    code: "fluid_overload",
+  },
+  {
+    id: "80",
+    name: "Legm",
+    code: "phlegm",
+  },
+  {
+    id: "81",
+    name: "Máu trong đờm",
+    code: "blood_in_sputum",
+  },
+  {
+    id: "82",
+    name: "Kích thích họng",
+    code: "throat_irritation",
+  },
+  {
+    id: "83",
+    name: "Mắt đỏ",
+    code: "redness_of_eyes",
+  },
+  {
+    id: "84",
+    name: "Áp lực xoang",
+    code: "sinus_pressure",
+  },
+  {
+    id: "85",
+    name: "Sổ mũi",
+    code: "runny_nose",
+  },
+  {
+    id: "86",
+    name: "Sự tắc nghẽn",
+    code: "congestion",
+  },
+  {
+    id: "87",
+    name: "Mất mùi",
+    code: "loss_of_smell",
+  },
+  {
+    id: "88",
+    name: "Nhịp tim nhanh",
+    code: "fast_heart_rate",
+  },
+  {
+    id: "89",
+    name: "Đờm gỉ",
+    code: "rusty_sputum",
+  },
+  {
+    id: "90",
+    name: "Đau đớn trong khi đi tiêu",
+    code: "pain_during_bowel_movements",
+  },
+  {
+    id: "91",
+    name: "Đau ở vùng hậu môn",
+    code: "pain_in_anal_region",
+  },
+  {
+    id: "92",
+    name: "Phân máu",
+    code: "bloody_stool",
+  },
+  {
+    id: "93",
+    name: "Kích thích trong hậu môn",
+    code: "irritation_in_anus",
+  },
+  {
+    id: "94",
+    name: "Chuột rút",
+    code: "cramps",
+  },
+  {
+    id: "95",
+    name: "Bầm tím",
+    code: "bruising",
+  },
+  {
+    id: "96",
+    name: "Chân sưng",
+    code: "swollen_legs",
+  },
+  {
+    id: "97",
+    name: "Tàu máu sưng",
+    code: "swollen_blood_vessels",
+  },
+  {
+    id: "98",
+    name: "Tĩnh mạch nổi bật trên bắp chân",
+    code: "prominent_veins_on_calf",
+  },
+  {
+    id: "99",
+    name: "Tăng cân",
+    code: "weight_gain",
+  },
+  {
+    id: "100",
+    name: "Bàn tay lạnh và feets",
+    code: "cold_hands_and_feets",
+  },
+  {
+    id: "101",
+    name: "Tâm trạng thay đổi",
+    code: "mood_swings",
+  },
+  {
+    id: "102",
+    name: "Khuôn mặt và đôi mắt sưng húp",
+    code: "puffy_face_and_eyes",
+  },
+  {
+    id: "103",
+    name: "Tuyến giáp mở rộng",
+    code: "enlarged_thyroid",
+  },
+  {
+    id: "104",
+    name: "Móng tay giòn",
+    code: "brittle_nails",
+  },
+  {
+    id: "105",
+    name: "Tỷ lệ bị sưng",
+    code: "swollen_extremeties",
+  },
+  {
+    id: "106",
+    name: "Kinh nguyệt bất thường",
+    code: "abnormal_menstruation",
+  },
+  {
+    id: "107",
+    name: "Yếu cơ",
+    code: "muscle_weakness",
+  },
+  {
+    id: "108",
+    name: "Sự lo lắng",
+    code: "anxiety",
+  },
+  {
+    id: "109",
+    name: "Bài phát biểu",
+    code: "slurred_speech",
+  },
+  {
+    id: "110",
+    name: "Đánh trống ngực",
+    code: "palpitations",
+  },
+  {
+    id: "111",
+    name: "Môi khô và ngứa ran",
+    code: "drying_and_tingling_lips",
+  },
+  {
+    id: "112",
+    name: "Đau đầu gối",
+    code: "knee_pain",
+  },
+  {
+    id: "113",
+    name: "Đau khớp hông",
+    code: "hip_joint_pain",
+  },
+  {
+    id: "114",
+    name: "Khớp sưng",
+    code: "swelling_joints",
+  },
+  {
+    id: "115",
+    name: "Đi bộ đau đớn",
+    code: "painful_walking",
+  },
+  {
+    id: "116",
+    name: "Độ cứng chuyển động",
+    code: "movement_stiffness",
+  },
+  {
+    id: "117",
+    name: "Chuyển động quay",
+    code: "spinning_movements",
+  },
+  {
+    id: "118",
+    name: "Sự không ổn định",
+    code: "unsteadiness",
+  },
+  {
+    id: "119",
+    name: "Mủ đầy mụn nhọt",
+    code: "pus_filled_pimples",
+  },
+  {
+    id: "120",
+    name: "Mụn đầu đen",
+    code: "blackheads",
+  },
+  {
+    id: "121",
+    name: "Chạy răng",
+    code: "scurring",
+  },
+  {
+    id: "122",
+    name: "Bàng quang khó chịu",
+    code: "bladder_discomfort",
+  },
+  {
+    id: "123",
+    name: "Mùi nước tiểu hôi",
+    code: "foul_smell_of urine",
+  },
+  {
+    id: "124",
+    name: "Cảm giác liên tục của nước tiểu",
+    code: "continuous_feel_of_urine",
+  },
+  {
+    id: "125",
+    name: "Da bong tróc",
+    code: "skin_peeling",
+  },
+  {
+    id: "126",
+    name: "Bạc như bụi",
+    code: "silver_like_dusting",
+  },
+  {
+    id: "127",
+    name: "Vết lõm nhỏ trong móng tay",
+    code: "small_dents_in_nails",
+  },
+  {
+    id: "128",
+    name: "Viêm móng tay",
+    code: "inflammatory_nails",
+  },
+  {
+    id: "129",
+    name: "Mụn rộp",
+    code: "blister",
+  },
+  {
+    id: "130",
+    name: "Đau đỏ quanh mũi",
+    code: "red_sore_around_nose",
+  },
+  {
+    id: "131",
+    name: "Lớp vỏ vàng ooze",
+    code: "yellow_crust_ooze",
+  },
+];

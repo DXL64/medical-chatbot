@@ -35,6 +35,11 @@ function NavBar() {
               </Link>
             </li>
             <li>
+              <Link to="/symptomps">
+                <a>Xem xét triệu chứng</a>
+              </Link>
+            </li>
+            <li>
               <Link to="/healthcare">
                 <a>Dự đoán tình trạng sức khoẻ</a>
               </Link>
@@ -86,6 +91,17 @@ function NavBar() {
           </li>
           <li className="p-1">
             <button
+              onClick={() => navigate("/symptomps")}
+              className={
+                location.pathname == "/symptomps"
+                  ? "btn btn-outline btn-primary"
+                  : ""
+              }>
+              Xem xét triệu chứng
+            </button>
+          </li>
+          <li className="p-1">
+            <button
               onClick={() => navigate("/healthcare")}
               className={
                 location.pathname == "/healthcare"
@@ -95,6 +111,7 @@ function NavBar() {
               Dự đoán tình trạng sức khoẻ
             </button>
           </li>
+
           <li className="p-1">
             <button
               onClick={() => navigate("/image-predict")}

@@ -1,0 +1,42 @@
+Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
+Drug Reaction,Ngừng kích thích,Tham khảo ý kiến ​​bệnh viện gần nhất,Ngừng dùng thuốc,Theo dõi
+Malaria,Tham khảo ý kiến ​​bệnh viện gần nhất,Tránh thức ăn nhờn,Tránh thức ăn không rau,Giữ muỗi ra
+Allergy,Áp dụng calamine,Khu vực che phủ băng,,Sử dụng băng để nén ngứa
+Hypothyroidism,Giảm căng thẳng,bài tập,Ăn uống lành mạnh,ngủ đúng cách
+Psoriasis,Rửa tay bằng nước xà phòng ấm,Ngừng chảy máu bằng áp lực,Tham khảo ý kiến ​​bác sĩ,bồn tắm muối
+GERD,Tránh thức ăn cay béo,Tránh nằm xuống sau khi ăn,Duy trì cân nặng khỏe mạnh,bài tập
+Chronic cholestasis,Tắm lạnh,thuốc chống ngứa,Tham khảo ý kiến ​​bác sĩ,Ăn uống lành mạnh
+hepatitis A,Tham khảo ý kiến ​​bệnh viện gần nhất,Rửa tay qua,Tránh thức ăn cay béo,thuốc
+Osteoarthristis,acetaminophen,Tham khảo ý kiến ​​bệnh viện gần nhất,Theo dõi,bồn tắm muối
+(vertigo) Paroymsal  Positional Vertigo,nằm xuống,Tránh sự thay đổi đột ngột trong cơ thể,Tránh chuyển động đầu đột ngột,thư giãn
+Hypoglycemia,nằm xuống bên,Kiểm tra xung,Uống đồ uống có đường,Tham khảo ý kiến ​​bác sĩ
+Acne,tắm hai lần,Tránh thức ăn cay béo,uống nhiều nước,Tránh quá nhiều sản phẩm
+Diabetes ,Có chế độ ăn uống cân bằng,bài tập,Tham khảo ý kiến ​​bác sĩ,Theo dõi
+Impetigo,Ngâm khu vực bị ảnh hưởng trong nước ấm,Sử dụng kháng sinh,Loại bỏ các vảy bằng vải nén ướt,Tham khảo ý kiến ​​bác sĩ
+Hypertension ,thiền,bồn tắm muối,Giảm căng thẳng,ngủ đúng cách
+Peptic ulcer diseae,Tránh thức ăn cay béo,Tiêu thụ thực phẩm sinh học,Loại bỏ sữa,Giới hạn rượu
+Dimorphic hemmorhoids(piles),Tránh thức ăn cay béo,tiêu thụ phù thủy hazel,tắm ấm với muối epsom,tiêu thụ nước ép lô hội
+Common Cold,uống vitamin c đồ uống giàu,Lấy hơi,Tránh thức ăn lạnh,Hãy kiểm tra sốt
+Chicken pox,Sử dụng neem trong tắm,tiêu thụ lá neem,Lấy vắc -xin,Tránh những nơi công cộng
+Cervical spondylosis,Sử dụng miếng đệm sưởi hoặc gói lạnh,bài tập,Take OTC Pain Deliever,Tham khảo ý kiến ​​bác sĩ
+Hyperthyroidism,Ăn uống lành mạnh,mát xa,Sử dụng Balm chanh,Điều trị bằng iốt phóng xạ
+Urinary tract infection,uống nhiều nước,tăng lượng vitamin C,Uống nước trái cây nam việt quất,uống men vi sinh
+Varicose veins,nằm xuống bằng phẳng và nâng chân cao,Sử dụng thuốc mỡ,Sử dụng nén tĩnh mạch,Đừng đứng yên lâu rồi
+AIDS,Tránh cắt mở,Mặc PPE nếu có thể,Tham khảo ý kiến ​​bác sĩ,Theo dõi
+Paralysis (brain hemorrhage),mát xa,Ăn uống lành mạnh,bài tập,Tham khảo ý kiến ​​bác sĩ
+Typhoid,Ăn rau cao calo,Liệu pháp kháng sinh,Tham khảo ý kiến ​​bác sĩ,thuốc
+Hepatitis B,Tham khảo ý kiến ​​bệnh viện gần nhất,tiêm chủng,Ăn uống lành mạnh,thuốc
+Fungal infection,tắm hai lần,Sử dụng dettol hoặc neem trong nước tắm,Giữ cho khu vực bị nhiễm khô,Sử dụng vải sạch
+Hepatitis C,Tham khảo ý kiến ​​bệnh viện gần nhất,tiêm chủng,Ăn uống lành mạnh,thuốc
+Migraine,thiền,Giảm căng thẳng,Sử dụng kính phân cực trong ánh nắng mặt trời,Tham khảo ý kiến ​​bác sĩ
+Bronchial Asthma,Chuyển sang quần áo lỏng lẻo,Hít thở sâu,Tránh xa Trigger,tìm kiếm sự giúp đỡ
+Alcoholic hepatitis,Ngừng tiêu thụ rượu,Tham khảo ý kiến ​​bác sĩ,thuốc,Theo dõi
+Jaundice,uống nhiều nước,tiêu thụ cây kế sữa,Ăn trái cây và thức ăn nhiều xơ,thuốc
+Hepatitis E,Ngừng tiêu thụ rượu,nghỉ ngơi,Tham khảo ý kiến ​​bác sĩ,thuốc
+Dengue,Uống nước trái cây đu đủ,Tránh thức ăn cay béo,Giữ muỗi đi,Giữ nước
+Hepatitis D,Tham khảo ý kiến ​​bác sĩ,thuốc,Ăn uống lành mạnh,Theo dõi
+Heart attack,Gọi xe cứu thương,Nhai hoặc nuốt aspirin,Giữ bình tĩnh,
+Pneumonia,Tham khảo ý kiến ​​bác sĩ,thuốc,nghỉ ngơi,Theo dõi
+Arthritis,bài tập,Sử dụng liệu pháp nóng và lạnh,thử châm cứu,mát xa
+Gastroenteritis,ngừng ăn thức ăn đặc trong khi,Hãy thử uống những ngụm nước nhỏ,nghỉ ngơi,dễ dàng trở lại ăn uống
+Tuberculosis,che miệng,Tham khảo ý kiến ​​bác sĩ,thuốc,nghỉ ngơi

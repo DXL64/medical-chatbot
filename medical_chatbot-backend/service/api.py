@@ -40,7 +40,7 @@ model.to(device)
 model.eval()
 
 # Load the model
-model = pickle.load(open('../models/DecisionTrees.pkl', 'rb'))
+model_dt = pickle.load(open('../models/DecisionTrees.pkl', 'rb'))
 
 # Define the symptoms
 diseases = [
@@ -262,7 +262,7 @@ def predict(request: DiseaseDataRequest):
 
     # Make prediction using the model
     try:
-        proba = model.predict_proba([features])
+        proba = model_dt.predict_proba([features])
     except Exception as e:
         return JSONResponse(content={"error": f"Model prediction failed: {str(e)}"}, status_code=500)
 
